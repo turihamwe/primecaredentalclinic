@@ -13,10 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//1. GUEST
+//Guest auth.
+//  Not applicable.
+//end Guest auth.
+
+/*Guest pages*/
+Route::namespace('App\Http\Controllers\Guest')->group(function () {
+    Route::get('/', 'HomeController@index')->name('/');
+    Route::get('about', 'HomeController@about')->name('about');
+    Route::get('services', 'HomeController@services')->name('services');
+    Route::get('contact', 'HomeController@contact')->name('contact');
 });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/*end Guest pages*/
