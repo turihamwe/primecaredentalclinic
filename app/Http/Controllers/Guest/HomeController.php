@@ -36,6 +36,15 @@ class HomeController extends Controller
         return view('guest.services', $data);
     }
     
+    
+    public function appointment()
+    {
+        $data = [
+            'title' => 'Appointment',
+        ];
+        return view('guest.appointment', $data);
+    }
+    
     public function contact()
     {
         $data = [
