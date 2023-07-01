@@ -10,30 +10,34 @@
 		<div class="row">
 			<div style="padding:20px" class="col-sm-6">
 				<h2 style="font-size:18px">{{ $title }}</h2>
-				<div class="row">
-					<div style="padding-top:10px;" class="col-sm-3"><label>Enter Name :</label></div>
-					<div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm" required></div>
-				</div>
-				<div style="margin-top:10px;" class="row">
-					<div style="padding-top:10px;" class="col-sm-3"><label>Email Address :</label></div>
-					<div class="col-sm-8"><input type="text" name="name" placeholder="Enter Email Address" class="form-control input-sm"></div>
-				</div>
-				<div style="margin-top:10px;" class="row">
-					<div style="padding-top:10px;" class="col-sm-3"><label>Mobile Number:</label></div>
-					<div class="col-sm-8"><input type="text" name="name" placeholder="Enter Mobile Number" class="form-control input-sm" required></div>
-				</div>
-				<div style="margin-top:10px;" class="row">
-					<div style="padding-top:10px;" class="col-sm-3"><label>Enter Message:</label></div>
-					<div class="col-sm-8">
-						<textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm" required></textarea>
+				<form action="{{ route('appointment') }}" method="POST">
+					@csrf
+
+					<div class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Enter Name :</label></div>
+						<div class="col-sm-8"><input name="name" type="text" placeholder="Your full name" class="form-control input-sm" required></div>
 					</div>
-				</div>
-				<div style="margin-top:10px;" class="row">
-					<div style="padding-top:10px;" class="col-sm-3"><label></label></div>
-					<div class="col-sm-8">
-						<button class="btn btn-danger btn-sm">Book appointment</button>
+					<div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Address :</label></div>
+						<div class="col-sm-8"><input name="address" type="text" placeholder="Your location" class="form-control input-sm"></div>
 					</div>
-				</div>
+					<div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Mobile Number:</label></div>
+						<div class="col-sm-8"><input name="phone" type="text" placeholder="Your mobile number" class="form-control input-sm" required></div>
+					</div>
+					{{-- <div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Enter Message:</label></div>
+						<div class="col-sm-8">
+							<textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm" required></textarea>
+						</div>
+					</div> --}}
+					<div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+						<div class="col-sm-8">
+							<button class="btn btn-danger btn-sm">Book appointment</button>
+						</div>
+					</div>
+				</form>
 			</div>
 			<div class="col-sm-6">
 				<div style="margin:50px" class="serv">

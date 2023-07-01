@@ -24,6 +24,7 @@ Route::namespace('App\Http\Controllers\Guest')->group(function () {
     Route::get('about', 'HomeController@about')->name('about');
     Route::get('services', 'HomeController@services')->name('services');
     Route::get('appointment', 'HomeController@appointment')->name('appointment');
+    Route::post('appointment', 'HomeController@appointment_post')->name('appointment');
     Route::get('contact', 'HomeController@contact')->name('contact');
 });
 /*end Guest pages*/

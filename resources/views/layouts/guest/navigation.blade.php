@@ -9,7 +9,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-7 logo">
-				<a href="{{ route('/') }}"><img src="{{ asset('images/logo.png') }}" alt=""></a>
+				<a href="{{ route('/') }}"><img src="{{ asset('images/logo4.png') }}" alt=""></a>
 				<a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
 			</div>
 			<div class="col-lg-3 col-md-5 d-none d-md-block call-r">
