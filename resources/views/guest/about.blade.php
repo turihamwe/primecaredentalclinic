@@ -5,6 +5,10 @@
 <!--  ************************* About Us Content Start Here  ************************** -->
 <div class="about-us">
 	<div class="container">
+		<div class="inner-title">
+			<h1 class="text-center">{{ $title }}</h1>
+			{{-- <p>Take a look at some of our key features</p> --}}
+		</div>
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
 				{{-- <br><br><br><br> --}}
@@ -26,75 +30,30 @@
 <div class="top-msg pt-00">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-6 vkjd ohs">
-				<h2><i class="far fa-clock"></i> Opening Hours</h2>
-				<ul>
-					<li>Mon - Fri <span>8.30AM - 7.30PM</span></li>
-					<li>Saturday - Fri <span>6.30AM - 9.30PM</span></li>
-					<li>Sunday - Fri <span>11.30AM - 3.30PM</span></li>
-				</ul>
+			<div class="col-lg-6 col-md-6 vkjd">
+				<h2><i class="fa fa-eye"></i> Our Vision</h2>
+				<p>To become the center of dental excellence and most sought dental service provider in Uganda offering the highest quality of family and cosmetic dental services in the most hospitable setup. In achieving so, Primecare dental clinic will meet patients' expectations by using the highest quality dental products and take advantage of leading dental technologies.</p>
 			</div>
-			<div class="col-lg-3 col-md-6 vkjd">
-				<h2><i class="fas fa-calendar-alt"></i> Doctors Timetable</h2>
-				<p>Take the first step towards a healthier smile by scheduling your appointment online today.</p>
+			<div class="col-lg-6 col-md-6 vkjd">
+				<h2><i class="fa fa-list"></i> Our Mission</h2>
+				<p>Our mission is to develop long-term relationships with our patients and insurance providers, and to warrant illustrious service through personalized, ethical and informed care. We aspire to help our community achieve outstanding oral healthcare through high quality, multidisciplinary and cost-effective dental services.</p>
 			</div>
-			<div class="col-lg-3 col-md-6 vkjd">
-				<h2><i class="far fa-envelope"></i> Appointments</h2>
-				<p>With just a few clicks, you can easily book your dental appointment from the comfort of your own home.</p>
-			</div>
-			<div class="col-lg-3 col-md-6 vkjd">
-				<h2><i class="fas fa-phone"></i> Emergency Cases</h2>
-				<h4>{{ env('PHONE_1') }}</h4>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-6 vkjd">
+				<h2 class="text-center">Our core values</h2>
+				<p>Our patients and staff feel that Primecare dental clinic is a special place. We believe there are two explanations for this feeling, and they are what make us different from other dental practices. One is the commitments we live by and the other is our core values.</p><br>
+				<p>Our core values mirror what is truly important to us as an organization and form the foundation on which we care for our clients and conduct ourselves. They are not descriptions of the work we do or the strategies we use to carry out our mission. Our core values are the fundamentals of how we go about our day-to-day work to ensure that this is a dental clinic patients and top talent employees want to belong to. They are the practices we endeavor to use every day in everything we perform.</p><br>
+				<p>Our core values remain relentless and underlie our work, how we interact with one another, and the approaches we use to achieve our objectives. It is critical to attaining our vision that the people we hire share these values. We demonstrate by our hiring choices and staff training, how seriously we take these core values.</p><br>
+				<p>Providing High-Quality Dental Care - There can be no concession on the quality of care we provide our patients. Each patient is special and treated with respect and provided dental care on a level that we would provide our closest family members. Our staff all work together as a team to deliver high quality and more complete care than the patient would receive otherwise. We use advanced technology not for its own sake, but to increase efficiency and accuracy in assessment, diagnosis, treatment, and quality of care for our patients.</p><br>
+				<p>Ensuring a Warm, Caring, Friendly, & Safe Atmosphere - We accommodate our patients who are fearful or anxious about dental treatment and work to make each visit special, comfortable and even enjoyable. We listen to their concerns and support each patient in overcoming their fear, while letting them maintain control. We ensure it is easy for patients to come to our facility by building relationships and trust beyond the expected. The design of our facility is welcoming and warm with sounds and visuals that are relaxing and comforting. The environment naturally reflects the quality and style of care we provide.</p><br>
+				<p>Giving Extraordinary Customer Service - From the first contact with our office, we work to exceed each person’s expectations even prior to them becoming our patients. We deliver with honesty and integrity by doing the “right thing” in all of our interactions and transactions, appreciating that our patients are the reason that we are who we are. We know that by doing so, they will become advocates for our clinic, referring others our way. Our partnerships with insurance providers and other corporate businesses are valued in the same way.</p><br>
+				<p>Supporting Team Member Excellence & Happiness - We strive to build and uphold a magnet practice that entices and retains team members of the highest talent in health care. Our success is dependent upon the collective intelligence, energy and contributions of all of our team members. Opportunities for continued growth and education help members achieve their highest potential. We appreciate effort, innovation and reward results. While we realize that we are each responsible for our own success and happiness, we create a workplace that is comfortable, enjoyable and supportive place to be.</p><br>
+				<p>Appreciating Financial Success for the Office & Team Members - We know firsthand that our continued existence and ability to act according to the above values is founded upon the financial capacity to do so. We take that obligation very seriously and understand that the decisions we make often have an impact on the financial health of Primecare dental clinic as an organization. While profit is not the driving force for our decisions and care, it is a consequence of the positive way we conduct ourselves, provide patient care, and run the business with fiscal responsibility. The financial success of the practice is shared by management, employees and communities through outreaches and allows us continued practice growth, as well as the ability to give back to the society.</p><br>
+				<p>Primecare dental clinic for Family and Cosmetic Dentistry is proud to provide quality dental care to residents of Kampala and to residents of surrounding areas, including Wakiso and Mukono districts. We invite you to contact our office at +256772000000/+256752000000 to learn more about our core values and dental services and to schedule your appointment with One of our dentists. We look forward to helping you care for your smile!</p><br>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- ################# Our Team Starts Here#######################--->
-<section class="our-team">
-	<div class="container">
-		<div class="inner-title row">
-			<h2>Our Team</h2>
-			<p>Take a look at our Team</p>
-		</div>
-		<div class="row team-row">
-			<div class="col-md-3 col-sm-6">
-				<div class="single-usr">
-					<img src="{{ asset('images/team/team.jpg') }}" alt="">
-					<div class="det-o">
-						<h4>David Kanuel</h4>
-						<i>Facial Surgan</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="single-usr">
-					<img src="{{ asset('images/team/team.jpg') }}" alt="">
-					<div class="det-o">
-						<h4>David Kanuel</h4>
-						<i>Facial Surgan</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="single-usr">
-					<img src="{{ asset('images/team/team.jpg') }}" alt="">
-					<div class="det-o">
-						<h4>David Kanuel</h4>
-						<i>Facial Surgan</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="single-usr">
-					<img src="{{ asset('images/team/team.jpg') }}" alt="">
-					<div class="det-o">
-						<h4>David Kanuel</h4>
-						<i>Facial Surgan</i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 @endsection

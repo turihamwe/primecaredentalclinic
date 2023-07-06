@@ -7,6 +7,9 @@
 </div> --}}
 <div class="row contact-rooo no-margin">
 	<div class="container">
+
+		@include('layouts.messages')
+		
 		<div class="row">
 			<div style="padding:20px" class="col-sm-6">
 				<h2 style="font-size:18px">{{ $title }}</h2>
@@ -14,21 +17,21 @@
 					@csrf
 
 					<div class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Enter Name :</label></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Enter name:</label></div>
 						<div class="col-sm-8"><input name="name" type="text" placeholder="Your full name" class="form-control input-sm" required></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Address :</label></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Address:</label></div>
 						<div class="col-sm-8"><input name="address" type="text" placeholder="Your location" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Mobile Number:</label></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Mobile number:</label></div>
 						<div class="col-sm-8"><input name="phone" type="text" placeholder="Your mobile number" class="form-control input-sm" required></div>
 					</div>
 					{{-- <div style="margin-top:10px;" class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label>Enter Message:</label></div>
 						<div class="col-sm-8">
-							<textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm" required></textarea>
+							<textarea name="message" rows="5" placeholder="Enter Your Message" class="form-control input-sm" required></textarea>
 						</div>
 					</div> --}}
 					<div style="margin-top:10px;" class="row">
