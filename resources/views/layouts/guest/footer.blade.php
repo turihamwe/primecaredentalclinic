@@ -16,7 +16,6 @@
 							<li><a ui-sref="gallery" href="{{ route('appointment') }}">Appointment</a><i class="fa fa-angle-right"></i></li>
 							<li><a ui-sref="gallery" href="{{ route('contact') }}">Contact us</a><i class="fa fa-angle-right"></i></li>
 							<li><a ui-sref="gallery" href="{{ route('contact') }}">Careers</a><i class="fa fa-angle-right"></i></li>
-							<li><a ui-sref="gallery" href="{{ route('contact') }}">Sustainable development</a><i class="fa fa-angle-right"></i></li>
 						</ul>
 					</div>
 					<div class="col-md-4 col-sm-12 map-img">
@@ -45,6 +44,21 @@
 				</span>
 			</div>
 		</div>
+
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+			(function(){
+			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+			s1.async=true;
+			s1.src='https://embed.tawk.to/64abc55694cf5d49dc629920/1h4vflmuv';
+			s1.charset='UTF-8';
+			s1.setAttribute('crossorigin','*');
+			s0.parentNode.insertBefore(s1,s0);
+			})();
+		</script>
+		<!--End of Tawk.to Script-->
+
 	</body>
 	<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
 	<script src="{{ asset('js/popper.min.js') }}"></script>

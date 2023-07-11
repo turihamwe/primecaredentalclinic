@@ -16,7 +16,7 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h5 class=" bounceInDown">Welcome to {{ config('app.name') }}</h5>
 					{{-- <p class=" bounceInLeft">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p> --}}
-					<p class=" bounceInLeft" style="background: #4b454b6b;">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p>
+					<p class=" bounceInLeft" style="background: #4b454bc7;">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p>
 					{{-- <p class=" bounceInLeft">Welcome to Primecare Dental Clinic in Kololo, Kampala! We are delighted to have you and are committed to providing you with the highest level of dental care. Our team of experienced dentists and friendly staff are here to ensure that your visit is comfortable, stress-free and effective.</p> --}}
 					<div class="row vbh">
 						<div class="btn btn-success bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Book an Appointment</a></div>
@@ -27,7 +27,7 @@
 				<img class="d-block w-100" src="{{ asset('images/slider/slide-2.jpg') }}" alt="Second slide">
 				<div class="carousel-caption d-none d-md-block">
 					<h5 class=" bounceInDown">Variety of services</h5>
-					<p class=" bounceInLeft" style="background: #4b454b6b;">At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p>
+					<p class=" bounceInLeft" style="background: #4b454bc7;">At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p>
 					<div class="row vbh">
 						<div class="btn btn-success bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Book an Appointment</a></div>
 					</div>
@@ -37,7 +37,7 @@
 				<img class="d-block w-100" src="{{ asset('images/slider/slide-3.jpg') }}" alt="Third slide">
 				<div class="carousel-caption vdg-cur d-none d-md-block">
 					<h5 class=" bounceInDown text-warning">Latest technology</h5>
-					<p class=" bounceInLeft" style="background: #4b454b6b;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
+					<p class=" bounceInLeft" style="background: #4b454bc7;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
 					<div class="row vbh">
 						<div class="btn btn-warning bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Book an Appointment</a></div>
 					</div>
@@ -54,6 +54,20 @@
 		</a>
 	</div>
 </div>
+<div class="about-us">
+	<div class="container">
+		<div class="inner-title">
+			<h1 class="text-center">Background</h1>
+			{{-- <p>Take a look at some of our key features</p> --}}
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				{{-- <h2>Welcome to {{ config('app.name') }}</h2> --}}
+				<p>Prime Care Dental clinic offers the Corporate Dental Program to corporate entities who are interested in providing their employees with dedicated corporate rates or dental services. These rates can be extended to family members of our corporate client as well. For more, get in touch with us on...</p>
+			</div>
+		</div>
+	</div>
+</div>
 <section class="key-features kf-2">
 	<div class="container">
 		<div class="inner-title">
@@ -66,7 +80,7 @@
 					<i class="fas fa-briefcase-medical"></i>
 					<h5>Oral surgery</h5>
 					<p>We diagnose and surgically treat conditions affecting the mouth, teeth, jaws, and face.</p>
-					<a href="{{ route('/') }}">Read more</a>
+					<a href="{{ route('oral-surgery') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -74,7 +88,7 @@
 					<i class="fas fa-user-md"></i>
 					<h5>General dentistry</h5>
 					<p>It involves the prevention, diagnosis, and treatment of a wide range of diseases.</p>
-					<a href="{{ route('/') }}">Read more</a>
+					<a href="{{ route('general-dentistry') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -82,7 +96,7 @@
 					<i class="far fa-thumbs-up"></i>
 					<h5>Dental Implant</h5>
 					<p>A surgical component that is placed into the jawbone to replace a missing tooth or teeth.</p>
-					<a href="{{ route('/') }}">Read more</a>
+					<a href="{{ route('dental-implant') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -164,20 +178,6 @@
 		</div>
 	</div>
 </div>
-<div class="about-us">
-	<div class="container">
-		<div class="inner-title">
-			<h1 class="text-center">Corporate partnerships</h1>
-			{{-- <p>Take a look at some of our key features</p> --}}
-		</div>
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				{{-- <h2>Welcome to {{ config('app.name') }}</h2> --}}
-				<p>Prime Care Dental clinic offers the Corporate Dental Program to corporate entities who are interested in providing their employees with dedicated corporate rates or dental services. These rates can be extended to family members of our corporate client as well. For more, get in touch with us on...</p>
-			</div>
-		</div>
-	</div>
-</div>
 <section class="key-features kf-2">
 	<div class="container">
 		<div class="inner-title">
@@ -210,11 +210,11 @@
 			</div>
 			<div class="col-lg-3 col-md-6 vkjd">
 				<h2><i class="fas fa-calendar-alt"></i> Doctors Timetable</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum posuere eleifend. Aenean quis ultricies orci. Duis ullamcorper eros id urna viverra</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum posuere eleifend. Aenean quis ultricies orci. Duis ullamcorper eros id urna viverra... <a href="{{ route('timetable') }}" class="text-primary">Read more</a></p>
 			</div>
 			<div class="col-lg-3 col-md-6 vkjd">
 				<h2><i class="far fa-envelope"></i> Appointments</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum posuere eleifend. Aenean quis ultricies orci. Duis ullamcorper eros id urna viverra</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum posuere eleifend. Aenean quis ultricies orci. Duis ullamcorper eros id urna viverra... <a href="{{ route('appointment') }}" class="text-primary">Book now</a></p>
 			</div>
 			<div class="col-lg-3 col-md-6 vkjd">
 				<h2><i class="fas fa-phone"></i> Emergency Cases</h2>
@@ -296,26 +296,35 @@
 			<div class="col-md-offset-2 float-auto col-md-10">
 				<div id="testimonial-slider" class="owl-carousel">
 					<div class="testimonial">
-						<div class="pic">
-							<img src="{{ asset('images/testimonial/testimonial.jpg') }}" alt="">
-						</div>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos. Lorem ipsum dolor sit amet, consectetur.
-						</p>
-						<h3 class="title">williamson
-							<span class="post"> -  Developer</span>
-						</h3>
+						<div class="pic"><img src="{{ asset('images/testimonial/testimonial.jpg') }}" alt=""></div>
+						<p class="description">A cool place with top care like no other, took my son there but right from the reception to the doctors, things were all great.</p>
+						{{-- <h3 class="title">Lutalo<span class="post"> - Developer </span></h3> --}}
+						<h3 class="title">Lutalo<span class="post"></span></h3>
 					</div>
 					<div class="testimonial">
-						<div class="pic">
-							<img src="{{ asset('images/testimonial/testimonial.jpg') }}" alt="">
-						</div>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos. Lorem ipsum dolor sit amet, consectetur.
-						</p>
-						<h3 class="title">Kristina
-							<span class="post"> - Teacher</span>
-						</h3>
+						<div class="pic"><img src="{{ asset('images/testimonial/testimonial.jpg') }}" alt=""></div>
+						<p class="description">Great place to treat kids, so friendly, engaging doctors and patient!</p>
+						<h3 class="title">Peter<span class="post"></span></h3>
+					</div>
+					<div class="testimonial">
+						<div class="pic"><img src="{{ asset('images/testimonial/testimonial-2.jpg') }}" alt=""></div>
+						<p class="description">Great team from the Dr to the nurse! I always felt like I’m part of the family and well taken care of! I Highly recommend them!</p>
+						<h3 class="title">Cathy<span class="post"></span></h3>
+					</div>
+					<div class="testimonial">
+						<div class="pic"><img src="{{ asset('images/testimonial/testimonial-2.jpg') }}" alt=""></div>
+						<p class="description">I would like to share my painless experience at the Primecare Dental Clinic. From receiving numbing medicine to fitting my crown, I felt no pain. Thank you for her gentle touch.</p>
+						<h3 class="title">Fifi<span class="post"></span></h3>
+					</div>
+					<div class="testimonial">
+						<div class="pic"><img src="{{ asset('images/testimonial/testimonial-2.jpg') }}" alt=""></div>
+						<p class="description">Excellent service! Very accommodating Drs and Staff. Highly recommendable Dental Clinic</p>
+						<h3 class="title">Stephie<span class="post"></span></h3>
+					</div>
+					<div class="testimonial">
+						<div class="pic"><img src="{{ asset('images/testimonial/testimonial.jpg') }}" alt=""></div>
+						<p class="description">I have been there today -it is such a nice place and not only the place but also the staff and services are woow....I felt well taken care-of after the treatment. keep it up.</p>
+						<h3 class="title">Fixx Nemesis<span class="post"></span></h3>
 					</div>
 				</div>
 			</div>

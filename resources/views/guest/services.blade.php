@@ -12,6 +12,22 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					<i class="fas fa-hospital-alt"></i>
+					<h5>Dental Check-up</h5>
+					<p>Visiting your dentist on a regular basis is an important part of your routine oral hygiene. Schedule your dental checkup today.</p>
+					<a href="{{ route('dental-checkup') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fas fa-hospital-alt"></i>
+					<h5>Dental Fillings</h5>
+					<p>A dental filling is carried out to repair a tooth damaged by mechanical trauma or decay (caries).</p>
+					<a href="{{ route('dental-fillings') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fas fa-hospital-alt"></i>
 					<h5>Oral disease prevention</h5>
 					<p>Oral disease prevention is an important aspect of maintaining good teeth and body health.</p>
 					<a href="{{ route('oral-disease-prevention') }}" class="text-primary">Read more</a>
@@ -94,7 +110,7 @@
 					<i class="fa fa-plus-square"></i>
 					<h5>Bridge</h5>
 					<p>This consists of crowns (that fit over your natural teeth) and artificial teeth (that “bridge the gap” in your smile).</p>
-					<a href="{{ route('/') }}" class="text-primary">Read more</a>
+					<a href="{{ route('bridge') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -116,7 +132,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					<i class="fas fa-user-md"></i>
-					<h5>Clear aligners/Invisalign</h5>
+					<h5>Teeth straightening (Clear aligners/Invisalign)</h5>
 					<p>These are a type of orthodontic treatment that uses a series of clear, removable trays to gradually straighten teeth.</p>
 					<a href="{{ route('clear-aligners-invisalign') }}" class="text-primary">Read more</a>
 				</div>
@@ -164,7 +180,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					<i class="fa fa-heart"></i>
-					<h5>Teeth cleaning</h5>
+					<h5>Scaling and Polishing (Teeth cleaning)</h5>
 					<p>This involves removing plaque, tartar, and stains from teeth to improve oral hygiene and prevent cavities and gum disease.</p>
 					<a href="{{ route('teeth-cleaning') }}" class="text-primary">Read more</a>
 				</div>
@@ -188,7 +204,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					<i class="fa fa-plus-square"></i>
-					<h5>Root planning</h5>
+					<h5>Root planing</h5>
 					<p>Root planing, also known as deep teeth cleaning, is a dental procedure used to treat gum disease.</p>
 					<a href="{{ route('root-planing') }}" class="text-primary">Read more</a>
 				</div>
@@ -215,6 +231,14 @@
 					<h5>Topical fluoride application</h5>
 					<p>This involves the application of highly concentrated fluoride varnishes to prevent erosion of the teeth.</p>
 					<a href="{{ route('topical-fluoride-treatment') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fas fa-user-md"></i>
+					<h5>Bad breath treatment</h5>
+					<p>Treatment of bad breath helps in the increased confidence in social situations amongst family and friends.</p>
+					<a href="{{ route('bad-breath') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 		</div>

@@ -32,6 +32,42 @@ class HomeController extends Controller
         return view('guest.about', $data);
     }
     
+        public function vision()
+        {
+            $data = [
+                'title' => 'Our vision',
+            ];
+            return view('guest.about.vision', $data);
+        }
+        public function mission()
+        {
+            $data = [
+                'title' => 'Our mission',
+            ];
+            return view('guest.about.mission', $data);
+        }
+        public function values()
+        {
+            $data = [
+                'title' => 'Core values',
+            ];
+            return view('guest.about.values', $data);
+        }
+        public function sustainability()
+        {
+            $data = [
+                'title' => 'Sustainability report',
+            ];
+            return view('guest.about.sustainability', $data);
+        }
+        public function csr()
+        {
+            $data = [
+                'title' => 'CSR',
+            ];
+            return view('guest.about.csr', $data);
+        }
+        
     public function services()
     {
         $data = [
@@ -40,12 +76,28 @@ class HomeController extends Controller
         return view('guest.services', $data);
     }
     
+    public function dental_checkup()
+    {
+        $data = [
+            'title' => 'Dental checkup',
+        ];
+        return view('guest.services.dental-checkup', $data);
+    }
+    
     public function oral_disease_prevention()
     {
         $data = [
             'title' => 'Oral disease prevention',
         ];
         return view('guest.services.oral-disease-prevention', $data);
+    }
+    
+    public function dental_fillings()
+    {
+        $data = [
+            'title' => 'Dental fillings',
+        ];
+        return view('guest.services.dental-fillings', $data);
     }
     
     public function general_dentistry()
@@ -147,9 +199,17 @@ class HomeController extends Controller
     public function clear_aligners_invisalign()
     {
         $data = [
-            'title' => 'Clear aligners invisalign',
+            'title' => 'Clear aligners/invisalign',
         ];
         return view('guest.services.clear-aligners-invisalign', $data);
+    }
+    
+    public function teeth_straightening()
+    {
+        $data = [
+            'title' => 'Teeth straightening',
+        ];
+        return view('guest.services.teeth-straightening', $data);
     }
     
     public function teeth_whitening()
@@ -248,12 +308,28 @@ class HomeController extends Controller
         return view('guest.services.topical-fluoride-treatment', $data);
     }
     
+    public function bad_breath()
+    {
+        $data = [
+            'title' => 'Bad breath',
+        ];
+        return view('guest.services.bad-breath', $data);
+    }
+    
     public function team()
     {
         $data = [
             'title' => 'Meet our team',
         ];
         return view('guest.team', $data);
+    }
+    
+    public function timetable()
+    {
+        $data = [
+            'title' => 'Doctors timetable',
+        ];
+        return view('guest.timetable', $data);
     }
 
     public function partnerships()
@@ -263,6 +339,22 @@ class HomeController extends Controller
         ];
         return view('guest.partnerships', $data);
     }
+
+    public function insurance()
+    {
+        $data = [
+            'title' => 'Dental insurance',
+        ];
+        return view('guest.insurance', $data);
+    }
+    
+    public function technology()
+    {
+        $data = [
+            'title' => 'Our technology',
+        ];
+        return view('guest.technology', $data);
+    }
     
     public function appointment()
     {
@@ -270,6 +362,14 @@ class HomeController extends Controller
             'title' => 'Appointment',
         ];
         return view('guest.appointment', $data);
+    }
+    
+    public function careers()
+    {
+        $data = [
+            'title' => 'Careers',
+        ];
+        return view('guest.careers', $data);
     }
     
     public function appointment_post(Request $request)
