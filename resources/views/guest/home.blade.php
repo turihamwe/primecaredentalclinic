@@ -77,15 +77,17 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="far fa-thumbs-up"></i>
-					<h5>Dental Implant</h5>
+					{{-- <i class="far fa-thumbs-up"></i> --}}
+					<img src="{{ asset('images/services/icons/dental-implants.jpg') }}" alt="">
+					<h5>Dental implants</h5>
 					<p>A surgical component that is placed into the jawbone to replace a missing tooth or teeth to give you a better smile.</p>
-					<a href="{{ route('dental-implant') }}" class="text-primary">Read more</a>
+					<a href="{{ route('dental-implants') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fas fa-capsules"></i>
+					{{-- <i class="fas fa-capsules"></i> --}}
+					<img src="{{ asset('images/services/icons/pediatric-dentistry.jpg') }}" alt="">
 					<h5>Pediatric dentistry</h5>
 					<p>With Child dentistry, we focus on the dental health needs of infants, children, and adolescents.</p>
 					<a href="{{ route('pediatric-dentistry') }}" class="text-primary">Read more</a>
@@ -93,7 +95,8 @@
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fas fa-hospital-alt"></i>
+					{{-- <i class="fas fa-hospital-alt"></i> --}}
+					<img src="{{ asset('images/services/icons/braces.jpg') }}" alt="">
 					<h5>Braces</h5>
 					<p>Dental braces are devices used during orthodontic treatment to correct teeth alignment and bite issues.</p>
 					<a href="{{ route('braces') }}" class="text-primary">Read more</a>
@@ -101,7 +104,8 @@
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fa fa-medkit"></i>
+					{{-- <i class="fa fa-medkit"></i> --}}
+					<img src="{{ asset('images/services/icons/crowns.jpg') }}" alt="">
 					<h5>Crowns</h5>
 					<p>This is a tooth-shaped cap placed over a damaged or weakened tooth to restore its shape, strength, size, and appearance.</p>
 					<a href="{{ route('crowns') }}" class="text-primary">Read more</a>
@@ -109,7 +113,8 @@
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fa fa-h-square"></i>
+					{{-- <i class="fa fa-h-square"></i> --}}
+					<img src="{{ asset('images/services/icons/veneers.jpg') }}" alt="">
 					<h5>Veneers</h5>
 					<p>Porcelain veneers are thin shells fabricated out of porcelain which fit precisely over the front surfaces of front teeth.</p>
 					<a href="{{ route('veneers') }}" class="text-primary">Read more</a>
@@ -117,8 +122,9 @@
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fas fa-hospital-alt"></i>
-					<h5>Dental Check-up</h5>
+					{{-- <i class="fas fa-hospital-alt"></i> --}}
+					<img src="{{ asset('images/services/icons/dental-checkup.jpg') }}" alt="">
+					<h5>Dental check-up</h5>
 					<p>Visiting your dentist on a regular basis is an important part of your routine oral hygiene. Schedule your dental checkup today.</p>
 					<a href="{{ route('dental-checkup') }}" class="text-primary">Read more</a>
 				</div>
@@ -135,7 +141,7 @@
 <div class="about-us">
 	<div class="container">
 		<div class="inner-title">
-			<h1 class="text-center">Why Primecare Dental clinic?</h1>
+			<h1 class="text-center">Why {{ config('app.name') }}?</h1>
 			{{-- <p>Take a look at some of our key features</p> --}}
 		</div>
 		<div class="row">
@@ -185,12 +191,17 @@
 			{{-- <p>Look for the Uganda Dental Association logo in the snaps folder and include “Member of Uganda Dental Association”.</p> --}}
 		</div>
 		<div class="row">
-			<div class="offset-md-4 col-md-4 col-sm-6">
+			<div class="offset-md-2 col-md-4 col-sm-6">
 				<div class="single-key">
 					<img src="{{ asset('images/partners/uda.png') }}" alt="">
 					{{-- <h5>Oral disease prevention</h5> --}}
 					{{-- <p>Oral disease prevention is an important aspect of maintaining good body health.</p> --}}
 					{{-- <a href="{{ route('/') }}">Read more</a> --}}
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/umdpc.png') }}" alt="">
 				</div>
 			</div>
 		</div>
@@ -315,6 +326,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="btn-ro text-center">
+			<button class="btn btn-success"><a href="{{ route('gallery') }}" class="text-white">Read more</a></button>
 		</div>
 	</div>
 </section>

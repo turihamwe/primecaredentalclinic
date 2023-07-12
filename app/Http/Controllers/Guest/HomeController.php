@@ -76,245 +76,216 @@ class HomeController extends Controller
         return view('guest.services', $data);
     }
     
-    public function dental_checkup()
-    {
-        $data = [
-            'title' => 'Dental checkup',
-        ];
-        return view('guest.services.dental-checkup', $data);
-    }
-    
-    public function oral_disease_prevention()
-    {
-        $data = [
-            'title' => 'Oral disease prevention',
-        ];
-        return view('guest.services.oral-disease-prevention', $data);
-    }
-    
-    public function dental_fillings()
-    {
-        $data = [
-            'title' => 'Dental fillings',
-        ];
-        return view('guest.services.dental-fillings', $data);
-    }
-    
-    public function general_dentistry()
-    {
-        $data = [
-            'title' => 'General dentistry',
-        ];
-        return view('guest.services.general-dentistry', $data);
-    }
-    
-    public function airflow_treatment()
-    {
-        $data = [
-            'title' => 'Airflow treatment',
-        ];
-        return view('guest.services.airflow-treatment', $data);
-    }
-    
-    public function oral_surgery()
-    {
-        $data = [
-            'title' => 'Oral surgery',
-        ];
-        return view('guest.services.oral-surgery', $data);
-    }
-    
-    public function pediatric_dentistry()
-    {
-        $data = [
-            'title' => 'Pediatric dentistry',
-        ];
-        return view('guest.services.pediatric-dentistry', $data);
-    }
-    
-    public function dental_hygiene()
-    {
-        $data = [
-            'title' => 'Dental hygiene',
-        ];
-        return view('guest.services.dental-hygiene', $data);
-    }
-    
-    public function veneers()
-    {
-        $data = [
-            'title' => 'Veneers',
-        ];
-        return view('guest.services.veneers', $data);
-    }
-    
-    public function glass_ceramic_restorations()
-    {
-        $data = [
-            'title' => 'Glass ceramic restorations',
-        ];
-        return view('guest.services.glass-ceramic-restorations', $data);
-    }
-    
-    public function inlays_onlays()
-    {
-        $data = [
-            'title' => 'Inlays onlays',
-        ];
-        return view('guest.services.inlays-onlays', $data);
-    }
-    
-    public function crowns()
-    {
-        $data = [
-            'title' => 'Crowns',
-        ];
-        return view('guest.services.crowns', $data);
-    }
-    
-    public function bridge()
-    {
-        $data = [
-            'title' => 'Bridge',
-        ];
-        return view('guest.services.bridge', $data);
-    }
-    
-    public function dental_implant()
-    {
-        $data = [
-            'title' => 'Dental implant',
-        ];
-        return view('guest.services.dental-implant', $data);
-    }
-    
-    public function braces()
-    {
-        $data = [
-            'title' => 'Braces',
-        ];
-        return view('guest.services.braces', $data);
-    }
-    
-    public function clear_aligners_invisalign()
-    {
-        $data = [
-            'title' => 'Clear aligners/invisalign',
-        ];
-        return view('guest.services.clear-aligners-invisalign', $data);
-    }
-    
-    public function teeth_straightening()
-    {
-        $data = [
-            'title' => 'Teeth straightening',
-        ];
-        return view('guest.services.teeth-straightening', $data);
-    }
-    
-    public function teeth_whitening()
-    {
-        $data = [
-            'title' => 'Teeth whitening',
-        ];
-        return view('guest.services.teeth-whitening', $data);
-    }
-    
-    public function space_maintainers()
-    {
-        $data = [
-            'title' => 'Space maintainers',
-        ];
-        return view('guest.services.space-maintainers', $data);
-    }
-    
-    public function root_canal_treatment()
-    {
-        $data = [
-            'title' => 'Root canal treatment',
-        ];
-        return view('guest.services.root-canal-treatment', $data);
-    }
-    
-    public function gum_reshaping()
-    {
-        $data = [
-            'title' => 'Gum reshaping',
-        ];
-        return view('guest.services.gum-reshaping', $data);
-    }
-    
-    public function mouthwash()
-    {
-        $data = [
-            'title' => 'Mouthwash',
-        ];
-        return view('guest.services.mouthwash', $data);
-    }
-    
-    public function teeth_cleaning()
-    {
-        $data = [
-            'title' => 'Teeth cleaning',
-        ];
-        return view('guest.services.teeth-cleaning', $data);
-    }
-    
-    public function digital_dental_xrays()
-    {
-        $data = [
-            'title' => 'Digital dental xrays',
-        ];
-        return view('guest.services.digital-dental-xrays', $data);
-    }
-    
-    public function intraoral_camera()
-    {
-        $data = [
-            'title' => 'Intraoral camera',
-        ];
-        return view('guest.services.intraoral-camera', $data);
-    }
-    
-    public function root_planing()
-    {
-        $data = [
-            'title' => 'Root planing',
-        ];
-        return view('guest.services.root-planing', $data);
-    }
-    
-    public function wisdom_molar_extraction()
-    {
-        $data = [
-            'title' => 'Wisdom molar extraction',
-        ];
-        return view('guest.services.wisdom-molar-extraction', $data);
-    }
-    
-    public function sinus_lift()
-    {
-        $data = [
-            'title' => 'Sinus lift',
-        ];
-        return view('guest.services.sinus-lift', $data);
-    }
-    
-    public function topical_fluoride_treatment()
-    {
-        $data = [
-            'title' => 'Topical fluoride treatment',
-        ];
-        return view('guest.services.topical-fluoride-treatment', $data);
-    }
-    
-    public function bad_breath()
-    {
-        $data = [
-            'title' => 'Bad breath',
-        ];
-        return view('guest.services.bad-breath', $data);
-    }
+        public function dental_checkup()
+        {
+            $data = [
+                'title' => 'Dental checkup',
+            ];
+            return view('guest.services.dental-checkup', $data);
+        }
+        public function oral_disease_prevention()
+        {
+            $data = [
+                'title' => 'Oral disease prevention',
+            ];
+            return view('guest.services.oral-disease-prevention', $data);
+        }
+        public function dental_fillings()
+        {
+            $data = [
+                'title' => 'Dental fillings',
+            ];
+            return view('guest.services.dental-fillings', $data);
+        }
+        public function general_dentistry()
+        {
+            $data = [
+                'title' => 'General dentistry',
+            ];
+            return view('guest.services.general-dentistry', $data);
+        }
+        public function airflow_treatment()
+        {
+            $data = [
+                'title' => 'Airflow treatment',
+            ];
+            return view('guest.services.airflow-treatment', $data);
+        }
+        public function oral_surgery()
+        {
+            $data = [
+                'title' => 'Oral surgery',
+            ];
+            return view('guest.services.oral-surgery', $data);
+        }
+        public function pediatric_dentistry()
+        {
+            $data = [
+                'title' => 'Pediatric dentistry',
+            ];
+            return view('guest.services.pediatric-dentistry', $data);
+        }
+        public function dental_hygiene()
+        {
+            $data = [
+                'title' => 'Dental hygiene',
+            ];
+            return view('guest.services.dental-hygiene', $data);
+        }
+        public function veneers()
+        {
+            $data = [
+                'title' => 'Veneers',
+            ];
+            return view('guest.services.veneers', $data);
+        }
+        public function glass_ceramic_restorations()
+        {
+            $data = [
+                'title' => 'Glass ceramic restorations',
+            ];
+            return view('guest.services.glass-ceramic-restorations', $data);
+        }
+        public function inlays_onlays()
+        {
+            $data = [
+                'title' => 'Inlays onlays',
+            ];
+            return view('guest.services.inlays-onlays', $data);
+        }
+        public function crowns()
+        {
+            $data = [
+                'title' => 'Crowns',
+            ];
+            return view('guest.services.crowns', $data);
+        }
+        public function bridges()
+        {
+            $data = [
+                'title' => 'Bridges',
+            ];
+            return view('guest.services.bridges', $data);
+        }
+        public function dental_implants()
+        {
+            $data = [
+                'title' => 'Dental implants',
+            ];
+            return view('guest.services.dental-implants', $data);
+        }
+        public function braces()
+        {
+            $data = [
+                'title' => 'Braces',
+            ];
+            return view('guest.services.braces', $data);
+        }
+        public function clear_aligners_invisalign()
+        {
+            $data = [
+                'title' => 'Clear aligners/invisalign',
+            ];
+            return view('guest.services.clear-aligners-invisalign', $data);
+        }
+        public function teeth_straightening()
+        {
+            $data = [
+                'title' => 'Teeth straightening',
+            ];
+            return view('guest.services.teeth-straightening', $data);
+        }
+        public function teeth_whitening()
+        {
+            $data = [
+                'title' => 'Teeth whitening',
+            ];
+            return view('guest.services.teeth-whitening', $data);
+        }
+        public function space_maintainers()
+        {
+            $data = [
+                'title' => 'Space maintainers',
+            ];
+            return view('guest.services.space-maintainers', $data);
+        }
+        public function root_canal_treatment()
+        {
+            $data = [
+                'title' => 'Root canal treatment',
+            ];
+            return view('guest.services.root-canal-treatment', $data);
+        }
+        public function gum_reshaping()
+        {
+            $data = [
+                'title' => 'Gum reshaping',
+            ];
+            return view('guest.services.gum-reshaping', $data);
+        }
+        public function mouthwash()
+        {
+            $data = [
+                'title' => 'Mouthwash',
+            ];
+            return view('guest.services.mouthwash', $data);
+        }
+        public function teeth_cleaning()
+        {
+            $data = [
+                'title' => 'Teeth cleaning',
+            ];
+            return view('guest.services.teeth-cleaning', $data);
+        }
+        public function digital_dental_xrays()
+        {
+            $data = [
+                'title' => 'Digital dental xrays',
+            ];
+            return view('guest.services.digital-dental-xrays', $data);
+        }
+        public function intraoral_camera()
+        {
+            $data = [
+                'title' => 'Intraoral camera',
+            ];
+            return view('guest.services.intraoral-camera', $data);
+        }
+        public function root_planing()
+        {
+            $data = [
+                'title' => 'Root planing',
+            ];
+            return view('guest.services.root-planing', $data);
+        }
+        public function wisdom_molar_extraction()
+        {
+            $data = [
+                'title' => 'Wisdom molar extraction',
+            ];
+            return view('guest.services.wisdom-molar-extraction', $data);
+        }
+        public function sinus_lift()
+        {
+            $data = [
+                'title' => 'Sinus lift',
+            ];
+            return view('guest.services.sinus-lift', $data);
+        }
+        public function topical_fluoride_application()
+        {
+            $data = [
+                'title' => 'Topical fluoride application',
+            ];
+            return view('guest.services.topical-fluoride-application', $data);
+        }
+        public function bad_breath_treatment()
+        {
+            $data = [
+                'title' => 'Bad breath treatment',
+            ];
+            return view('guest.services.bad-breath-treatment', $data);
+        }
     
     public function team()
     {
@@ -356,6 +327,14 @@ class HomeController extends Controller
         return view('guest.insurance', $data);
     }
     
+    public function gallery()
+    {
+        $data = [
+            'title' => 'Testimonials',
+        ];
+        return view('guest.gallery', $data);
+    }
+    
     public function technology()
     {
         $data = [
@@ -375,7 +354,7 @@ class HomeController extends Controller
     public function careers()
     {
         $data = [
-            'title' => 'Careers',
+            'title' => 'Career policy',
         ];
         return view('guest.careers', $data);
     }

@@ -40,8 +40,8 @@ Route::namespace('App\Http\Controllers\Guest')->group(function (){
         Route::get('glass-ceramic-restorations', 'HomeController@glass_ceramic_restorations')->name('glass-ceramic-restorations');
         Route::get('inlays-onlays', 'HomeController@inlays_onlays')->name('inlays-onlays');
         Route::get('crowns', 'HomeController@crowns')->name('crowns');
-        Route::get('bridge', 'HomeController@bridge')->name('bridge');
-        Route::get('dental-implant', 'HomeController@dental_implant')->name('dental-implant');
+        Route::get('bridges', 'HomeController@bridges')->name('bridges');
+        Route::get('dental-implants', 'HomeController@dental_implants')->name('dental-implants');
         Route::get('braces', 'HomeController@braces')->name('braces');
         Route::get('clear-aligners-invisalign', 'HomeController@clear_aligners_invisalign')->name('clear-aligners-invisalign');
         Route::get('teeth-whitening', 'HomeController@teeth_whitening')->name('teeth-whitening');
@@ -55,13 +55,14 @@ Route::namespace('App\Http\Controllers\Guest')->group(function (){
         Route::get('root-planing', 'HomeController@root_planing')->name('root-planing');
         Route::get('wisdom-molar-extraction', 'HomeController@wisdom_molar_extraction')->name('wisdom-molar-extraction');
         Route::get('sinus-lift', 'HomeController@sinus_lift')->name('sinus-lift');
-        Route::get('topical-fluoride-treatment', 'HomeController@topical_fluoride_treatment')->name('topical-fluoride-treatment');
-        Route::get('bad-breath', 'HomeController@bad_breath')->name('bad-breath');
+        Route::get('topical-fluoride-application', 'HomeController@topical_fluoride_application')->name('topical-fluoride-application');
+        Route::get('bad-breath-treatment', 'HomeController@bad_breath_treatment')->name('bad-breath-treatment');
     Route::get('team', 'HomeController@team')->name('team');
     Route::get('payments', 'HomeController@payments')->name('payments');
     Route::get('timetable', 'HomeController@timetable')->name('timetable');
     Route::get('partnerships', 'HomeController@partnerships')->name('partnerships');
     Route::get('insurance', 'HomeController@insurance')->name('insurance');
+    Route::get('gallery', 'HomeController@gallery')->name('gallery');
     Route::get('technology', 'HomeController@technology')->name('technology');
     Route::get('appointment', 'HomeController@appointment')->name('appointment');
     Route::post('appointment', 'HomeController@appointment_post')->name('appointment');
