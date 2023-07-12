@@ -44,6 +44,13 @@
 				</span>
 			</div>
 		</div>
+		
+		{{-- Whatsapp chat
+		<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+		<div class="elfsight-app-52757dc5-40a0-44d5-b97f-0a3a62b2d899"></div> --}}
+		{{-- Tiktok chat
+		<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+		<div class="elfsight-app-584fd3d3-875a-4088-9a81-27be81d92732"></div> --}}
 
 		<!--Start of Tawk.to Script-->
 		<script type="text/javascript">

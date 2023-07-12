@@ -4,6 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Orthodontic treatment, Pediatric dentistry, Teeth alignment, Braces, Dental services in Kampala, Uganda, East Africa, Africa, near me, the world">
+	<meta name="keywords" content="Orthodontic treatment, Pediatric dentistry, Teeth alignment, Braces, Dental services in Kampala, Uganda, East Africa, Africa, near me, the world">
 	<title> {{ config('app.name') }} | @yield('title')</title>
 	<link rel="shortcut icon" href="{{ asset('images/fav.png') }}">
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">

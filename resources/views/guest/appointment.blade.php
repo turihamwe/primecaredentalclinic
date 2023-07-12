@@ -13,31 +13,54 @@
 		<div class="row">
 			<div style="padding:20px" class="col-sm-6">
 				<h2 style="font-size:18px">{{ $title }}</h2>
+				<p>Make your appointment online using our email <span class="text-info">{{ env('EMAIL_APP') }}</span> or the convenient form below.</p><br>
 				<form action="{{ route('appointment') }}" method="POST">
 					@csrf
 
 					<div class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Enter name:</label></div>
-						<div class="col-sm-8"><input name="name" type="text" placeholder="Your full name" class="form-control input-sm" required></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Enter name*:</label></div>
+						<div class="col-sm-8"><input name="name" type="text" placeholder="Eg. John Doe" class="form-control input-sm" required></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label>Address:</label></div>
-						<div class="col-sm-8"><input name="address" type="text" placeholder="Your location" class="form-control input-sm"></div>
+						<div class="col-sm-8"><input name="address" type="text" placeholder="Eg. Kyengera, Kampala" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Mobile number:</label></div>
-						<div class="col-sm-8"><input name="phone" type="text" placeholder="Your mobile number" class="form-control input-sm" required></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Mobile number*:</label></div>
+						<div class="col-sm-8"><input name="phone" type="text" placeholder="Eg. 256784392100" class="form-control input-sm" required></div>
 					</div>
-					{{-- <div style="margin-top:10px;" class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Enter Message:</label></div>
+					<div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Email address:</label></div>
+						<div class="col-sm-8"><input name="email" type="email" placeholder="Eg. example@email.com" class="form-control input-sm"></div>
+					</div>
+					<div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Date*:</label></div>
+						<div class="col-sm-8"><input name="date" type="date" class="form-control input-sm"></div>
+					</div>
+					<div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Time*:</label></div>
 						<div class="col-sm-8">
-							<textarea name="message" rows="5" placeholder="Enter Your Message" class="form-control input-sm" required></textarea>
+							<select name="time" id="time" class="form-control input-sm">
+								<option value="">Select</option>
+								<option value="8:00am - 10:00am">8:00am - 10:00am</option>
+								<option value="10:00am - 12:00pm">10:00am - 12:00pm</option>
+								<option value="12:00pm - 2:00pm">12:00pm - 2:00pm</option>
+								<option value="2:00pm - 4:00pm">2:00pm - 4:00pm</option>
+								<option value="4:00pm - 6:00pm">4:00pm - 6:00pm</option>
+								<option value="6:00pm - 8:00pm">6:00pm - 8:00pm</option>
+							</select>
 						</div>
-					</div> --}}
+					</div>
+					<div style="margin-top:10px;" class="row">
+						<div style="padding-top:10px;" class="col-sm-3"><label>Message:</label></div>
+						<div class="col-sm-8">
+							<textarea name="message" rows="5" placeholder="Notes for the doctor" class="form-control input-sm" required></textarea>
+						</div>
+					</div>
 					<div style="margin-top:10px;" class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label></label></div>
 						<div class="col-sm-8">
-							<button class="btn btn-danger btn-sm">Book appointment</button>
+							<button class="btn btn-info btn-sm">Book appointment</button>
 						</div>
 					</div>
 				</form>
@@ -49,8 +72,15 @@
 					{{ env('ADDRESS_1') }}<br>
 					{{ env('ADDRESS_2') }}<br>
 					Phone: {{ env('PHONE_1') }}<br>
-					Email: {{ env('EMAIL_INFO') }}<br>
-					Website: <a href="{{ config('app.url') }}">{{ config('app.url') }}</a><br>
+					WhatsApp: <a href="https://api.whatsapp.com/send?phone=256704605561&text=This%20is%20a%20test" target="_blank" class=" badge badge-success">Click here to chat with us directly on WhatsApp</a><br>
+					Email: <span class="text-primary">{{ env('EMAIL_INFO') }}</span><br>
+					Website: <a href="{{ config('app.url') }}" class="text-warning">{{ config('app.url') }}</a><br>
+				</div>
+				<div style="margin:50px" class="serv">
+					<h2 style="margin-top:10px;">Payment methods</h2>
+					<p>Mobile money MTN: <b>077...</b></p>
+					<p>Mobile money Airtel: <b>075...</b></p>
+						<p>Equity till number: <b>023415</b></p>
 				</div>
 			</div>
 		</div>

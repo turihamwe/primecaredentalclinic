@@ -324,6 +324,14 @@ class HomeController extends Controller
         return view('guest.team', $data);
     }
     
+    public function payments()
+    {
+        $data = [
+            'title' => 'Payments methods',
+        ];
+        return view('guest.payments', $data);
+    }
+    
     public function timetable()
     {
         $data = [
@@ -379,12 +387,20 @@ class HomeController extends Controller
             'name' => 'required|string|max:255',
             'address' => 'required|string|max:255',
             'phone' => 'required|string|max:255',
+            'email' => 'nullable|email|max:255',
+            'date' => 'required|string|max:255',
+            'time' => 'required|string|max:255',
+            'message' => 'nullable',
         ]);
 
         //2. Capture inputs.
         $name = $request->input('name');
         $address = $request->input('address');
         $phone = $request->input('phone');
+        $email = $request->input('email');
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $message = $request->input('message');
 
         //Add appointment operation.
         $appointment = new Appointment;
@@ -392,12 +408,19 @@ class HomeController extends Controller
         $appointment->name = $name;
         $appointment->address = $address;
         $appointment->phone = $phone;
+        $appointment->email = $email;
+        $appointment->date = $date;
+        $appointment->time = $time;
+        $appointment->description = $message;
         $result = $appointment->save();
+
+        //Send email.
+        mail("tturihamwe@gmail.com", "Test email", "Test email");
     
         //7. Validate result.
         if($result){
             // logToDB("create_appointment_success", "Appointment #{$appointment->code} successful.", NULL, NULL, $username, "user", 1);
-            return back()->with("success", "Appointment submitted successfully.");
+            return back()->with("success", "Appointment submitted successfully. Your reference code is " . $appointment->code);
         }else{
             // logToDB("create_appointment_error", "Appointment #{$appointment->code} unsuccessful.", NULL, NULL, $username, "user", 1);
             return back()->with("error", "Appointment unsuccessful.");

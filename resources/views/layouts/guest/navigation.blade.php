@@ -5,8 +5,9 @@
 			{{-- <div class="col-md-3 d-none d-lg-block"> --}}
 			<div class="col-lg-3 d-md-none d-sm-none d-none d-lg-block">
 				<div class="call d-flex">
-					<i class="fab fa-whatsapp"></i>
-					<div class="call-no">{{ env('PHONE_1') }}<br>{{ env('EMAIL_INFO') }}</div>&nbsp;&nbsp;&nbsp;
+					<i class="fa fa-phone"></i>
+					<div class="call-no">{{ env('PHONE_1') }}<br>{{ env('PHONE_2') }}</div>&nbsp;&nbsp;&nbsp;
+					<a href="https://api.whatsapp.com/send?phone=256704605561&text=This%20is%20a%20test" title="Click to chat directly on WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 					<i class="fas fa-map-marker-alt d-lg-none d-xs-none"></i>
 					<div class="call-no d-lg-none d-xs-none">{{ env('ADDRESS_1') }}<br>{{ env('ADDRESS_2') }}</div>
 				</div>
@@ -22,7 +23,7 @@
 				</div>
 			</div>
 			<div class="d-lg-none col-md-3 col-sm-6 col-xs-12">
-				<div class="call d-flex">
+				<div class="call d-flex" style="padding-left:0;">
 					<i class="fab fa-whatsapp"></i>
 					<div class="call-no">{{ env('PHONE_1') }}<br>{{ env('EMAIL_INFO') }}</div>&nbsp;&nbsp;&nbsp;
 					<i class="fas fa-map-marker-alt d-none d-xs-block"></i>
@@ -51,6 +52,7 @@
 							  	<a href="#">Management</a>
 							  	<a href="{{ route('technology') }}">Our technology</a>
 							  	<a href="{{ route('partnerships') }}">Events</a>
+							  	<a href="{{ route('payments') }}">Payments</a>
 							  	<a href="#">Gallery</a>
 							  	<a href="#">FAQs</a>
 							  	<a href="#">News & media</a>

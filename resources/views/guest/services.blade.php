@@ -11,6 +11,46 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
+					<i class="fa fa-stethoscope"></i>
+					<h5>Dental implants</h5>
+					<p>A dental implant is a surgical component that is placed into the jawbone to replace a missing tooth or teeth.</p>
+					<a href="{{ route('dental-implant') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fas fa-capsules"></i>
+					<h5>Pediatric dentistry</h5>
+					<p>With Child dentistry, we focus on the dental health needs of infants, children, and adolescents.</p>
+					<a href="{{ route('pediatric-dentistry') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fas fa-hospital-alt"></i>
+					<h5>Braces</h5>
+					<p>Dental braces are devices used during orthodontic treatment to correct teeth alignment and bite issues.</p>
+					<a href="{{ route('braces') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fa fa-medkit"></i>
+					<h5>Crowns</h5>
+					<p>This is a tooth-shaped cap placed over a damaged or weakened tooth to restore its shape, strength, size, and appearance.</p>
+					<a href="{{ route('crowns') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fa fa-h-square"></i>
+					<h5>Veneers</h5>
+					<p>Porcelain veneers are thin shells fabricated out of porcelain which fit precisely over the front surfaces of front teeth.</p>
+					<a href="{{ route('veneers') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
 					<i class="fas fa-hospital-alt"></i>
 					<h5>Dental Check-up</h5>
 					<p>Visiting your dentist on a regular basis is an important part of your routine oral hygiene. Schedule your dental checkup today.</p>
@@ -59,26 +99,10 @@
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fas fa-capsules"></i>
-					<h5>Pediatric dentistry</h5>
-					<p>With Child dentistry, we focus on the dental health needs of infants, children, and adolescents.</p>
-					<a href="{{ route('pediatric-dentistry') }}" class="text-primary">Read more</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-key">
 					<i class="fas fa-prescription-bottle-alt"></i>
 					<h5>Dental hygiene</h5>
 					<p>This entails maintaining oral health and preventing dental problems through regular maintenance of the teeth and gums.</p>
 					<a href="{{ route('dental-hygiene') }}" class="text-primary">Read more</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-key">
-					<i class="fa fa-h-square"></i>
-					<h5>Veneers</h5>
-					<p>Porcelain veneers are thin shells fabricated out of porcelain which fit precisely over the front surfaces of front teeth.</p>
-					<a href="{{ route('veneers') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -99,34 +123,10 @@
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fa fa-medkit"></i>
-					<h5>Crowns</h5>
-					<p>This is a tooth-shaped cap placed over a damaged or weakened tooth to restore its shape, strength, size, and appearance.</p>
-					<a href="{{ route('crowns') }}" class="text-primary">Read more</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-key">
 					<i class="fa fa-plus-square"></i>
 					<h5>Bridge</h5>
 					<p>This consists of crowns (that fit over your natural teeth) and artificial teeth (that “bridge the gap” in your smile).</p>
 					<a href="{{ route('bridge') }}" class="text-primary">Read more</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-key">
-					<i class="fa fa-stethoscope"></i>
-					<h5>Dental Implant</h5>
-					<p>A dental implant is a surgical component that is placed into the jawbone to replace a missing tooth or teeth.</p>
-					<a href="{{ route('dental-implant') }}" class="text-primary">Read more</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-key">
-					<i class="fas fa-hospital-alt"></i>
-					<h5>Braces</h5>
-					<p>Dental braces are devices used during orthodontic treatment to correct teeth alignment and bite issues.</p>
-					<a href="{{ route('braces') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">

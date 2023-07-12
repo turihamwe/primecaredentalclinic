@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 //end Guest auth.
 
 /*Guest pages*/
-Route::namespace('App\Http\Controllers\Guest')->group(function () {
+Route::namespace('App\Http\Controllers\Guest')->group(function (){
     Route::get('/', 'HomeController@index')->name('/');
     Route::get('about', 'HomeController@about')->name('about');
         Route::get('vision', 'HomeController@vision')->name('vision');
@@ -58,6 +58,7 @@ Route::namespace('App\Http\Controllers\Guest')->group(function () {
         Route::get('topical-fluoride-treatment', 'HomeController@topical_fluoride_treatment')->name('topical-fluoride-treatment');
         Route::get('bad-breath', 'HomeController@bad_breath')->name('bad-breath');
     Route::get('team', 'HomeController@team')->name('team');
+    Route::get('payments', 'HomeController@payments')->name('payments');
     Route::get('timetable', 'HomeController@timetable')->name('timetable');
     Route::get('partnerships', 'HomeController@partnerships')->name('partnerships');
     Route::get('insurance', 'HomeController@insurance')->name('insurance');
@@ -69,3 +70,11 @@ Route::namespace('App\Http\Controllers\Guest')->group(function () {
     Route::post('contact', 'HomeController@contact_post')->name('contact');
 });
 /*end Guest pages*/
+
+/*Mail*/
+Route::namespace('App\Http\Controllers')->group(function (){
+    Route::get('sendbasicemail','MailController@basic_email');
+    Route::get('sendhtmlemail','MailController@html_email');
+    Route::get('sendattachmentemail','MailController@attachment_email');
+});
+/*end Mail*/

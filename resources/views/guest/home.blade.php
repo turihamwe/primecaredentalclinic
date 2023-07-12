@@ -16,10 +16,10 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h5 class=" bounceInDown">Welcome to {{ config('app.name') }}</h5>
 					{{-- <p class=" bounceInLeft">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p> --}}
-					<p class=" bounceInLeft" style="background: #4b454bc7;">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p>
+					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p>
 					{{-- <p class=" bounceInLeft">Welcome to Primecare Dental Clinic in Kololo, Kampala! We are delighted to have you and are committed to providing you with the highest level of dental care. Our team of experienced dentists and friendly staff are here to ensure that your visit is comfortable, stress-free and effective.</p> --}}
 					<div class="row vbh">
-						<div class="btn btn-success bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Book an Appointment</a></div>
+						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
 					</div>
 				</div>
 			</div>
@@ -27,9 +27,9 @@
 				<img class="d-block w-100" src="{{ asset('images/slider/slide-2.jpg') }}" alt="Second slide">
 				<div class="carousel-caption d-none d-md-block">
 					<h5 class=" bounceInDown">Variety of services</h5>
-					<p class=" bounceInLeft" style="background: #4b454bc7;">At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p>
+					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p>
 					<div class="row vbh">
-						<div class="btn btn-success bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Book an Appointment</a></div>
+						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
 					</div>
 				</div>
 			</div>
@@ -37,9 +37,9 @@
 				<img class="d-block w-100" src="{{ asset('images/slider/slide-3.jpg') }}" alt="Third slide">
 				<div class="carousel-caption vdg-cur d-none d-md-block">
 					<h5 class=" bounceInDown text-warning">Latest technology</h5>
-					<p class=" bounceInLeft" style="background: #4b454bc7;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
+					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
 					<div class="row vbh">
-						<div class="btn btn-warning bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Book an Appointment</a></div>
+						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
 					</div>
 				</div>
 			</div>
@@ -71,31 +71,15 @@
 <section class="key-features kf-2">
 	<div class="container">
 		<div class="inner-title">
-			<h2>Our services</h2>
+			<h1 class="text-center">Our services</h1>
 			<p>Take a look at some of our services.</p>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fas fa-briefcase-medical"></i>
-					<h5>Oral surgery</h5>
-					<p>We diagnose and surgically treat conditions affecting the mouth, teeth, jaws, and face.</p>
-					<a href="{{ route('oral-surgery') }}" class="text-primary">Read more</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-key">
-					<i class="fas fa-user-md"></i>
-					<h5>General dentistry</h5>
-					<p>It involves the prevention, diagnosis, and treatment of a wide range of diseases.</p>
-					<a href="{{ route('general-dentistry') }}" class="text-primary">Read more</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-key">
 					<i class="far fa-thumbs-up"></i>
 					<h5>Dental Implant</h5>
-					<p>A surgical component that is placed into the jawbone to replace a missing tooth or teeth.</p>
+					<p>A surgical component that is placed into the jawbone to replace a missing tooth or teeth to give you a better smile.</p>
 					<a href="{{ route('dental-implant') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
@@ -109,10 +93,18 @@
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
-					<i class="fas fa-prescription-bottle-alt"></i>
-					<h5>Dental hygiene</h5>
-					<p>This entails maintaining oral health and preventing dental problems through regular maintenance of the teeth and gums.</p>
-					<a href="{{ route('dental-hygiene') }}" class="text-primary">Read more</a>
+					<i class="fas fa-hospital-alt"></i>
+					<h5>Braces</h5>
+					<p>Dental braces are devices used during orthodontic treatment to correct teeth alignment and bite issues.</p>
+					<a href="{{ route('braces') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fa fa-medkit"></i>
+					<h5>Crowns</h5>
+					<p>This is a tooth-shaped cap placed over a damaged or weakened tooth to restore its shape, strength, size, and appearance.</p>
+					<a href="{{ route('crowns') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -121,6 +113,14 @@
 					<h5>Veneers</h5>
 					<p>Porcelain veneers are thin shells fabricated out of porcelain which fit precisely over the front surfaces of front teeth.</p>
 					<a href="{{ route('veneers') }}" class="text-primary">Read more</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-key">
+					<i class="fas fa-hospital-alt"></i>
+					<h5>Dental Check-up</h5>
+					<p>Visiting your dentist on a regular basis is an important part of your routine oral hygiene. Schedule your dental checkup today.</p>
+					<a href="{{ route('dental-checkup') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
 		</div>
@@ -200,39 +200,26 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-6 vkjd ohs">
-				<h2><i class="far fa-clock"></i> Opening Hours</h2>
+				<h2><i class="far fa-clock"></i>Opening Hours</h2>
 				<ul>
-					<li>Mon - Fri<span>8.00AM - 5.00PM</span></li>
-					<li>Saturday<span>8.00AM - 4.00PM</span></li>
-					<li>Sunday<span>9.00AM - 3.00PM</span></li>
-					<li>Public Holidays<span>8.00AM - 3.00PM</span></li>
+					<li>Mon - Fri<span>8.00AM - 8.00PM</span></li>
+					<li>Saturday<span>8.00AM - 8.00PM</span></li>
+					<li>Sunday<span>10.00AM - 5.00PM</span></li>
+					<li>Public holidays<span>8.00AM - 5.00PM</span></li>
 				</ul>
 			</div>
 			<div class="col-lg-3 col-md-6 vkjd">
-				<h2><i class="fas fa-calendar-alt"></i> Doctors Timetable</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum posuere eleifend. Aenean quis ultricies orci. Duis ullamcorper eros id urna viverra... <a href="{{ route('timetable') }}" class="text-primary">Read more</a></p>
+				<h2><i class="fas fa-calendar-alt"></i>Doctors Timetable</h2>
+				<p>Our Dental Clinic is dedicated to providing the most up to date general, orthodontic and family dentistry. Our doctors are on duty throughout the week. <a href="{{ route('timetable') }}" class="text-primary">Take a look</a> at our schedule.</p>
 			</div>
 			<div class="col-lg-3 col-md-6 vkjd">
-				<h2><i class="far fa-envelope"></i> Appointments</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum posuere eleifend. Aenean quis ultricies orci. Duis ullamcorper eros id urna viverra... <a href="{{ route('appointment') }}" class="text-primary">Book now</a></p>
+				<h2><i class="far fa-envelope"></i>Appointments</h2>
+				<p>Our clinics provide high-level dental services and offer comprehensive solutions for the treatment of any dental disease. <a href="{{ route('appointment') }}" class="text-primary">Click here</a> to book your appointment today.</p>
 			</div>
 			<div class="col-lg-3 col-md-6 vkjd">
-				<h2><i class="fas fa-phone"></i> Emergency Cases</h2>
-				<h4>{{ env('PHONE_1') }}</h4>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="professional-details">
-	<div class="layy">
-		<div class="container">
-			<div class="title-another row">
-				<h4>We Are Professionals</h4>
-				<h2>Professional Approach</h2>
-				<h3>and Quality Services</h3>
-				<div class="btn-ro">
-					<button class="btn btn-warning bg-warning"><a href="{{ route('appointment') }}" class="text-white">Book an Appointment</a></button>
-				</div>
+				<h2><i class="fas fa-phone"></i>Emergency Cases</h2>
+				<p>We are available on call for emergencies, not later than 8:00pm on Sunday. In case of any emergency please call
+				<b class="text-warning" style="font-size: 20px;">{{ env('PHONE_1') }}</b></p>
 			</div>
 		</div>
 	</div>
@@ -240,8 +227,8 @@
 <section class="our-team">
 	<div class="container">
 		<div class="inner-title row">
-			<h2>Our team</h2>
-			<p>Take a look at our team</p>
+			<h2>Meet our doctors</h2>
+			<p>Our doctors is dedicated to providing the most up-to-date general, orthodontic and family dentistry. Get to know them.</p>
 		</div>
 		<div class="row team-row">
 			<div class="col-md-3 col-sm-6">
@@ -331,5 +318,19 @@
 		</div>
 	</div>
 </section>
+<div class="professional-details">
+	<div class="layy">
+		<div class="container">
+			<div class="title-another row">
+				<h4>Make your dream smile a reality! Call us on</h4>
+				<h2>{{ env('PHONE_1') }}</h2>
+				<h3>or make an appointment</h3>
+				<div class="btn-ro">
+					<button class="btn btn-warning bg-warning"><a href="{{ route('appointment') }}" class="text-white">Book an appointment</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 @endsection
