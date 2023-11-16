@@ -4,6 +4,9 @@
 
 <div class="about-us">
 	<div class="container">
+
+		@include('layouts.messages')
+
 		<div class="inner-title">
 			<h1 class="text-center">{{ $title }}</h1>
 			{{-- <p>Take a look at some of our key features</p> --}}
@@ -170,7 +173,7 @@
 		<div id="form" class="col-sm-12 mt-5 mb-5">
 			<h2 style="font-size:18px">Application form</h2>
 			<p>Please fill your details and submit the form and we shall contact you when you are short-listed.</p><br>
-			<form action="{{ route('careers-submit') }}" method="POST">
+			<form action="{{ route('careers-submit') }}" method="POST" enctype="multipart/form-data">
 				@csrf
 
 				<div class="row">

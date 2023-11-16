@@ -4,13 +4,18 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Application;
 use App\Models\Appointment;
 use App\Models\Message;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ApplicationMail;
 // use Auth;
 use Str;
 
 class HomeController extends Controller
 {
+    private $support_email = "info@primecaredentalclinics.com";
+
     /**
      * Show the home page.
      *
@@ -375,7 +380,7 @@ class HomeController extends Controller
             // 'address' => 'required|string|max:255',
             'email' => 'nullable|email|max:255',
             'phone' => 'required|string|max:255',
-            'cv' => 'required|mimes:pdf',
+            'cv' => 'required|mimes:pdf|max:10000',
             // 'time' => 'required|string|max:255',
             'message' => 'nullable',
         ]);
@@ -389,20 +394,44 @@ class HomeController extends Controller
         // $time = $request->input('time');
         $message = $request->input('message');
 
-        //Add appointment operation.
-        $appointment = new Appointment;
-        $appointment->code = 'PCAPP' . Str::random(5);
-        $appointment->name = $name;
-        $appointment->address = $address;
-        $appointment->phone = $phone;
-        $appointment->email = $email;
-        $appointment->date = $date;
-        $appointment->time = $time;
-        $appointment->description = $message;
-        $result = $appointment->save();
+        //Upload application CV operation.
+        $application = new Application;
+        $application->code = 'PCAPP' . Str::random(5);
+        $application->name = $name;
+        // $application->address = $address;
+        $application->email = $email;
+        $application->phone = $phone;
+        //Upload CV.
+        // $application->img_url = $cv;
+        // $application->time = $time;
+        $application->description = $message;
+        $result = $application->save();
+
+        $details = array(
+            'to_email' => $this->support_email,
+            // 'department' => $department,
+            // 'department2' => $department2,
+            'name' => $name,
+            // 'username' => $username,
+            'email' => $email,
+            'phone' => $phone,
+            // 'cv' => $cv,
+            'message' => $message,
+        );//dd($details);
+        // Mail::send(new ApplicationMail($details));
+
+        // //4. Validate result.
+        // if(count(Mail::failures()) == 0){
+        //     logToDB("contact_message_success", "{$name} sent contact message.", NULL, "guest", 1);
+        //     return back()->with('success', 'Message sent successfully. Thanks for contacting us.');
+        // }else{
+        //     $err = count(Mail::failures());
+        //     logToDB("contact_message_error", "{$name} unsuccessful contact message.", NULL, "guest", 1);
+        //     return back()->with('error','Sorry! ' . $err . ' error(s) while sending your message.');
+        // }
 
         //Send email.
-        mail("tturihamwe@gmail.com", "Test email", "Test email");
+        $result = mail("tturihamwe@gmail.com", "Test email", "Test email");
 
         //7. Validate result.
         if($result){
@@ -412,7 +441,6 @@ class HomeController extends Controller
             // logToDB("create_appointment_error", "Appointment #{$appointment->code} unsuccessful.", NULL, NULL, $username, "user", 1);
             return back()->with("error", "Appointment unsuccessful.");
         }
-
     }
     public function appointment_post(Request $request)
     {
@@ -459,7 +487,6 @@ class HomeController extends Controller
             // logToDB("create_appointment_error", "Appointment #{$appointment->code} unsuccessful.", NULL, NULL, $username, "user", 1);
             return back()->with("error", "Appointment unsuccessful.");
         }
-
     }
 
     public function contact()
