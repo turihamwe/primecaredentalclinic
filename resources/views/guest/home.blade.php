@@ -26,7 +26,7 @@
 			<div class="carousel-item">
 				<img class="d-block w-100" src="{{ asset('images/slider/slide-2.jpg') }}" alt="Second slide">
 				<div class="carousel-caption d-none d-md-block">
-					<h5 class=" bounceInDown">Variety of services</h5>
+					<h5 class=" bounceInDown text-warning">Latest technology</h5>
 					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p>
 					<div class="row vbh">
 						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
@@ -36,8 +36,8 @@
 			<div class="carousel-item">
 				<img class="d-block w-100" src="{{ asset('images/slider/slide-3.jpg') }}" alt="Third slide">
 				<div class="carousel-caption vdg-cur d-none d-md-block">
-					<h5 class=" bounceInDown text-warning">Latest technology</h5>
-					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
+					<h5 class=" bounceInDown">Family dental services</h5>
+					<p class=" bounceInLeft" style="background: #4b454b6e; font-weight:300;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
 					<div class="row vbh">
 						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
 					</div>
@@ -239,7 +239,7 @@
 	<div class="container">
 		<div class="inner-title row">
 			<h2>Meet our doctors</h2>
-			<p>Our doctors is dedicated to providing the most up-to-date general, orthodontic and family dentistry. Get to know them.</p>
+			<p>Our doctors are dedicated to providing the most up-to-date general, orthodontic and family dentistry. Get to know them.</p>
 		</div>
 		<div class="row team-row">
 			<div class="col-md-3 col-sm-6">

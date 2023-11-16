@@ -38,7 +38,7 @@
 				<ul>
 					<li title="Home"><a href="{{ route('/') }}" class="btn btn-sm btn-success">Home</a></li>
 					{{-- <li title="About us"><a href="{{ route('about') }}" class="btn btn-sm btn-success">About us</a></li> --}}
-					<li title="About">
+					<li>
 						<div class="dropdown">
 							<a href="{{ route('about') }}" class="btn btn-sm btn-success">About us</a>
 							<div class="dropdown-content">
@@ -47,9 +47,11 @@
 							  	<a href="{{ route('mission') }}">Mission</a>
 							  	<a href="{{ route('values') }}">Core values</a>
 							  	<a href="{{ route('team') }}">Team</a>
+							  	<a href="{{ route('tutorials') }}">Education resources</a>
 							  	<a href="{{ route('technology') }}">Our technology</a>
 							  	<a href="{{ route('gallery') }}">Gallery</a>
 							  	<a href="{{ route('payments') }}">Payments</a>
+							  	<a href="{{ route('insurance') }}">Insurance</a>
 							  	<a href="{{ route('partnerships') }}">Partnerships</a>
 							  	<a href="{{ route('sustainability') }}">Sustainability</a>
 							  	<a href="{{ route('csr') }}">CSR</a>
@@ -98,12 +100,14 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="{{ route('team') }}" class="btn btn-sm btn-success">Our team</a></li>
+					<li><a href="{{ route('gallery') }}" class="btn btn-sm btn-warning">Gallery</a></li>
 					{{-- <li><a href="{{ route('partnerships') }}" class="btn btn-sm btn-success">Partnerships</a></li> --}}
 					<li title="Appointment"><a href="{{ route('appointment') }}" class="btn btn-sm btn-warning">Book an appointment</a></li>
+					<li><a href="{{ route('team') }}" class="btn btn-sm btn-success">Our team</a></li>
+					<li><a href="{{ route('tutorials') }}" class="btn btn-sm btn-success">Tutorials</a></li>
 					{{-- <li title="Technology"><a href="{{ route('technology') }}" class="btn btn-sm btn-success">Technology</a></li> --}}
-					<li title="Insurance"><a href="{{ route('insurance') }}" class="btn btn-sm btn-success">Insurance</a></li>
-					<li title="Careers"><a href="{{ route('careers') }}" class="btn btn-sm btn-success">Careers</a></li>
+					{{-- <li title="Insurance"><a href="{{ route('insurance') }}" class="btn btn-sm btn-success">Insurance</a></li> --}}
+					{{-- <li title="Careers"><a href="{{ route('careers') }}" class="btn btn-sm btn-success">Careers</a></li> --}}
 					<li title="Contact us"><a href="{{ route('contact') }}" class="btn btn-sm btn-success">Contact us</a></li>
 				</ul>
 			</div>

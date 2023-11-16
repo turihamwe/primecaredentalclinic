@@ -15,19 +15,19 @@
 
 					<div class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label>Full name:</label></div>
-						<div class="col-sm-8"><input name="name" type="text" placeholder="Enter name" class="form-control input-sm"  ></div>
+						<div class="col-sm-8"><input name="name" type="text" placeholder="Enter name" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label>Email address:</label></div>
-						<div class="col-sm-8"><input name="email" type="email" placeholder="Enter email address" class="form-control input-sm"  ></div>
+						<div class="col-sm-8"><input name="email" type="email" placeholder="Enter email address" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label>Mobile number:</label></div>
-						<div class="col-sm-8"><input name="phone" type="text" placeholder="Enter mobile number" class="form-control input-sm"  ></div>
+						<div class="col-sm-8"><input name="phone" type="text" placeholder="Enter mobile number" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label>Subject:</label></div>
-						<div class="col-sm-8"><input name="subject" type="text" placeholder="Enter subject" class="form-control input-sm"  ></div>
+						<div class="col-sm-8"><input name="subject" type="text" placeholder="Enter subject" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
 						<div style="padding-top:10px;" class="col-sm-3"><label>Your message:</label></div>
@@ -46,13 +46,20 @@
 			<div class="col-sm-6">
 				<div style="margin:50px" class="serv">
 					<h2 style="margin-top:10px;">Address</h2>
-					{{ config('app.name') }} <br>
+					{{ config('app.name') }}<br>
 					{{ env('ADDRESS_1') }}<br>
 					{{ env('ADDRESS_2') }}<br>
 					Phone: {{ env('PHONE_1') }}<br>
-					Email: <a href="mailto:{{ env('EMAIL_INFO') }}">{{ env('EMAIL_INFO') }}</a><br>
-					Website: <a href="{{ config('app.url') }}">{{ config('app.url') }}</a><br>
+					WhatsApp: <a href="https://api.whatsapp.com/send?phone=256704605561&text=This%20is%20a%20test" target="_blank" class=" badge badge-success">Click here to chat with us directly on WhatsApp</a><br>
+					Email: <span class="text-primary">{{ env('EMAIL_INFO') }}</span><br>
+					Website: <a href="{{ config('app.url') }}" class="text-warning">{{ config('app.url') }}</a><br>
 				</div>
+				{{-- <div style="margin:50px" class="serv">
+					<h2 style="margin-top:10px;">Payment methods</h2>
+					<p>Mobile money MTN: <b>077...</b></p>
+					<p>Mobile money Airtel: <b>075...</b></p>
+						<p>Equity till number: <b>023415</b></p>
+				</div> --}}
 			</div>
 		</div>
 	</div>

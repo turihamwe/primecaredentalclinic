@@ -14,7 +14,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-1.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 						{{-- <h4>Dr. Peter Muthon</h4>
 						<i>Facial Surgeon</i>
 						<p><a href="{{ route('/') }}" style="color:yellow">Read more</a></p> --}}
@@ -24,7 +24,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-2.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 						{{-- <h4>Dr. Namatovu Rosen</h4>
 						<i>Facial Surgeon</i>
 						<p><a href="{{ route('/') }}" style="color:yellow" data-toggle="collapse" data-target="#demo">Read more</a></p> --}}
@@ -41,7 +41,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-3.jpg') }}" alt="">
-					<div class="det-o text-center">
+					<div class="det-o bg-info text-center">
 						{{-- <h4>Dr. Muhumuza Innocent</h4>
 						<i>Facial Surgeon</i>
 						<p><a href="{{ route('/') }}" style="color:yellow">Read more</a></p> --}}
@@ -51,7 +51,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-4.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 						{{-- <h4>Dr. David Kanuel</h4>
 						<i>Facial Surgan</i> --}}
 					</div>
@@ -60,140 +60,140 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-5.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-6.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-7.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-8.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-9.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-10.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-11.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-12.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-13.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-14.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-15.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-16.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-17.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-18.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-19.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-20.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-21.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-22.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-23.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="single-usr">
 					<img src="{{ asset('images/gallery/gallery-24.jpg') }}" alt="">
-					<div class="det-o">
+					<div class="det-o bg-info">
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,7 @@
 				<img src="{{ asset('images/about.jpg') }}" alt="">
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<h2>Welcome to {{ config('app.name') }}</h2>
+				<h2>About {{ config('app.name') }}</h2>
 				<p>Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p><br>
 				{{-- <p>Welcome to Primecare Dental Clinic in Kololo, Kampala! We are delighted to have you and are committed to providing you with the highest level of dental care. Our team of experienced dentists and friendly staff are here to ensure that your visit is comfortable, stress-free and effective.</p> --}}
 				{{-- <p>At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p> --}}

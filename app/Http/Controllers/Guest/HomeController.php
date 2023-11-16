@@ -23,7 +23,7 @@ class HomeController extends Controller
         ];
         return view('guest.home', $data);
     }
-    
+
     public function about()
     {
         $data = [
@@ -31,7 +31,7 @@ class HomeController extends Controller
         ];
         return view('guest.about', $data);
     }
-    
+
         public function vision()
         {
             $data = [
@@ -67,7 +67,7 @@ class HomeController extends Controller
             ];
             return view('guest.about.csr', $data);
         }
-        
+
     public function services()
     {
         $data = [
@@ -75,7 +75,7 @@ class HomeController extends Controller
         ];
         return view('guest.services', $data);
     }
-    
+
         public function dental_checkup()
         {
             $data = [
@@ -286,7 +286,7 @@ class HomeController extends Controller
             ];
             return view('guest.services.bad-breath-treatment', $data);
         }
-    
+
     public function team()
     {
         $data = [
@@ -294,7 +294,7 @@ class HomeController extends Controller
         ];
         return view('guest.team', $data);
     }
-    
+
     public function payments()
     {
         $data = [
@@ -302,13 +302,21 @@ class HomeController extends Controller
         ];
         return view('guest.payments', $data);
     }
-    
+
     public function timetable()
     {
         $data = [
             'title' => 'Doctors timetable',
         ];
         return view('guest.timetable', $data);
+    }
+
+    public function tutorials()
+    {
+        $data = [
+            'title' => 'Education resources',
+        ];
+        return view('guest.tutorials', $data);
     }
 
     public function partnerships()
@@ -326,15 +334,15 @@ class HomeController extends Controller
         ];
         return view('guest.insurance', $data);
     }
-    
+
     public function gallery()
     {
         $data = [
-            'title' => 'Testimonials',
+            'title' => 'Gallery / Testimonials',
         ];
         return view('guest.gallery', $data);
     }
-    
+
     public function technology()
     {
         $data = [
@@ -342,7 +350,7 @@ class HomeController extends Controller
         ];
         return view('guest.technology', $data);
     }
-    
+
     public function appointment()
     {
         $data = [
@@ -350,7 +358,7 @@ class HomeController extends Controller
         ];
         return view('guest.appointment', $data);
     }
-    
+
     public function careers()
     {
         $data = [
@@ -358,7 +366,54 @@ class HomeController extends Controller
         ];
         return view('guest.careers', $data);
     }
-    
+
+    public function careers_post(Request $request)
+    {
+        //1. Validate request.
+        $request->validate([
+            'name' => 'required|string|max:255',
+            // 'address' => 'required|string|max:255',
+            'email' => 'nullable|email|max:255',
+            'phone' => 'required|string|max:255',
+            'cv' => 'required|mimes:pdf',
+            // 'time' => 'required|string|max:255',
+            'message' => 'nullable',
+        ]);
+
+        //2. Capture inputs.
+        $name = $request->input('name');
+        // $address = $request->input('address');
+        $email = $request->input('email');
+        $phone = $request->input('phone');
+        $cv = $request->input('cv');
+        // $time = $request->input('time');
+        $message = $request->input('message');
+
+        //Add appointment operation.
+        $appointment = new Appointment;
+        $appointment->code = 'PCAPP' . Str::random(5);
+        $appointment->name = $name;
+        $appointment->address = $address;
+        $appointment->phone = $phone;
+        $appointment->email = $email;
+        $appointment->date = $date;
+        $appointment->time = $time;
+        $appointment->description = $message;
+        $result = $appointment->save();
+
+        //Send email.
+        mail("tturihamwe@gmail.com", "Test email", "Test email");
+
+        //7. Validate result.
+        if($result){
+            // logToDB("create_appointment_success", "Appointment #{$appointment->code} successful.", NULL, NULL, $username, "user", 1);
+            return back()->with("success", "Appointment submitted successfully. Your reference code is " . $appointment->code);
+        }else{
+            // logToDB("create_appointment_error", "Appointment #{$appointment->code} unsuccessful.", NULL, NULL, $username, "user", 1);
+            return back()->with("error", "Appointment unsuccessful.");
+        }
+
+    }
     public function appointment_post(Request $request)
     {
         //1. Validate request.
@@ -395,7 +450,7 @@ class HomeController extends Controller
 
         //Send email.
         mail("tturihamwe@gmail.com", "Test email", "Test email");
-    
+
         //7. Validate result.
         if($result){
             // logToDB("create_appointment_success", "Appointment #{$appointment->code} successful.", NULL, NULL, $username, "user", 1);
@@ -406,7 +461,7 @@ class HomeController extends Controller
         }
 
     }
-    
+
     public function contact()
     {
         $data = [
@@ -414,7 +469,7 @@ class HomeController extends Controller
         ];
         return view('guest.contact', $data);
     }
-    
+
     public function contact_post(Request $request)
     {
         //1. Validate request.
@@ -442,7 +497,7 @@ class HomeController extends Controller
         $contact->subject = $subject;
         $contact->description = $message;
         $result = $contact->save();
-    
+
         //7. Validate result.
         if($result){
             // logToDB("create_contact_success", "Contact #{$contact->code} successful.", NULL, NULL, $username, "user", 1);
@@ -453,5 +508,5 @@ class HomeController extends Controller
         }
 
     }
-    
+
 }

@@ -60,6 +60,7 @@ Route::namespace('App\Http\Controllers\Guest')->group(function (){
     Route::get('team', 'HomeController@team')->name('team');
     Route::get('payments', 'HomeController@payments')->name('payments');
     Route::get('timetable', 'HomeController@timetable')->name('timetable');
+    Route::get('tutorials', 'HomeController@tutorials')->name('tutorials');
     Route::get('partnerships', 'HomeController@partnerships')->name('partnerships');
     Route::get('insurance', 'HomeController@insurance')->name('insurance');
     Route::get('gallery', 'HomeController@gallery')->name('gallery');
@@ -67,6 +68,7 @@ Route::namespace('App\Http\Controllers\Guest')->group(function (){
     Route::get('appointment', 'HomeController@appointment')->name('appointment');
     Route::post('appointment', 'HomeController@appointment_post')->name('appointment');
     Route::get('careers', 'HomeController@careers')->name('careers');
+    Route::post('careers-submit', 'HomeController@careers_post')->name('careers-submit');
     Route::get('contact', 'HomeController@contact')->name('contact');
     Route::post('contact', 'HomeController@contact_post')->name('contact');
 });
