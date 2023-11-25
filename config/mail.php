@@ -92,9 +92,11 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'info@primecaredentalclinics.com'),
+        'name' => env('MAIL_FROM_NAME', 'Primecare Dental Clinic Ltd'),
     ],
+
+    'reply_to' => ['address' => 'info@primecaredentalclinics.com', 'name' => 'Primecare Dental Clinic Ltd'],
 
     /*
     |--------------------------------------------------------------------------

@@ -377,71 +377,57 @@ class HomeController extends Controller
         //1. Validate request.
         $request->validate([
             'name' => 'required|string|max:255',
-            // 'address' => 'required|string|max:255',
             'email' => 'nullable|email|max:255',
             'phone' => 'required|string|max:255',
             'cv' => 'required|mimes:pdf|max:10000',
-            // 'time' => 'required|string|max:255',
             'message' => 'nullable',
         ]);
 
         //2. Capture inputs.
         $name = $request->input('name');
-        // $address = $request->input('address');
         $email = $request->input('email');
         $phone = $request->input('phone');
-        $cv = $request->input('cv');
-        // $time = $request->input('time');
+        $cv = $request->file('cv');
         $message = $request->input('message');
 
-        //Upload application CV operation.
+        // //Upload.
+        // if($request->hasFile('cv')){
+        //     $date = date('Y-m-d');
+        //     $url = 'uploads/applications/' . $date;
+        //     $img_name = time() . rand(1, 100) . '.' . $request->cv->extension();
+        //     $request->cv->move(public_path($url), $img_name);
+        //     $img_path = $url . $img_name;
+        // }
+
+        //New application.
         $application = new Application;
         $application->code = 'PCAPP' . Str::random(5);
         $application->name = $name;
-        // $application->address = $address;
         $application->email = $email;
         $application->phone = $phone;
-        //Upload CV.
-        // $application->img_url = $cv;
-        // $application->time = $time;
+        // $application->img_url = $img_path;
         $application->description = $message;
         $result = $application->save();
 
         $details = array(
             'to_email' => $this->support_email,
-            // 'department' => $department,
-            // 'department2' => $department2,
             'name' => $name,
-            // 'username' => $username,
             'email' => $email,
             'phone' => $phone,
-            // 'cv' => $cv,
+            'cv' => $cv,
             'message' => $message,
-        );//dd($details);
-        // Mail::send(new ApplicationMail($details));
+        );
 
-        // //4. Validate result.
-        // if(count(Mail::failures()) == 0){
-        //     logToDB("contact_message_success", "{$name} sent contact message.", NULL, "guest", 1);
-        //     return back()->with('success', 'Message sent successfully. Thanks for contacting us.');
-        // }else{
-        //     $err = count(Mail::failures());
-        //     logToDB("contact_message_error", "{$name} unsuccessful contact message.", NULL, "guest", 1);
-        //     return back()->with('error','Sorry! ' . $err . ' error(s) while sending your message.');
-        // }
-
-        //Send email.
-        $result = mail("tturihamwe@gmail.com", "Test email", "Test email");
+        \Mail::send(new \App\Mail\ApplicationMail($details));
 
         //7. Validate result.
-        if($result){
-            // logToDB("create_appointment_success", "Appointment #{$appointment->code} successful.", NULL, NULL, $username, "user", 1);
-            return back()->with("success", "Appointment submitted successfully. Your reference code is " . $appointment->code);
+        if(count(Mail::failures()) == 0){
+            return back()->with("success", "Appointment submitted successfully. Your reference code is " . $application->code);
         }else{
-            // logToDB("create_appointment_error", "Appointment #{$appointment->code} unsuccessful.", NULL, NULL, $username, "user", 1);
             return back()->with("error", "Appointment unsuccessful.");
         }
     }
+
     public function appointment_post(Request $request)
     {
         //1. Validate request.
@@ -464,25 +450,26 @@ class HomeController extends Controller
         $time = $request->input('time');
         $message = $request->input('message');
 
-        //Add appointment operation.
-        $appointment = new Appointment;
-        $appointment->code = 'PCAPP' . Str::random(5);
-        $appointment->name = $name;
-        $appointment->address = $address;
-        $appointment->phone = $phone;
-        $appointment->email = $email;
-        $appointment->date = $date;
-        $appointment->time = $time;
-        $appointment->description = $message;
-        $result = $appointment->save();
+        // //Add appointment operation.
+        // $appointment = new Appointment;
+        // $appointment->code = 'PCAPP' . Str::random(5);
+        // $appointment->name = $name;
+        // $appointment->address = $address;
+        // $appointment->phone = $phone;
+        // $appointment->email = $email;
+        // $appointment->date = $date;
+        // $appointment->time = $time;
+        // $appointment->description = $message;
+        // $result = $appointment->save();
 
         //Send email.
-        mail("tturihamwe@gmail.com", "Test email", "Test email");
+        $result = mail("tturihamwe@gmail.com", "Test email", "Test email");
 
         //7. Validate result.
         if($result){
             // logToDB("create_appointment_success", "Appointment #{$appointment->code} successful.", NULL, NULL, $username, "user", 1);
-            return back()->with("success", "Appointment submitted successfully. Your reference code is " . $appointment->code);
+            return back()->with("success", "Appointment submitted successfully. Your reference code is ");
+            // return back()->with("success", "Appointment submitted successfully. Your reference code is " . $appointment->code);
         }else{
             // logToDB("create_appointment_error", "Appointment #{$appointment->code} unsuccessful.", NULL, NULL, $username, "user", 1);
             return back()->with("error", "Appointment unsuccessful.");
