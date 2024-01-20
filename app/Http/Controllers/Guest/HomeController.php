@@ -14,7 +14,8 @@ use Str;
 
 class HomeController extends Controller
 {
-    private $support_email = "info@primecaredentalclinics.com";
+    private $info_email = "info@primecaredentalclinics.com";
+    private $appointments_email = "appointments@primecaredentalclinics.com";
 
     /**
      * Show the home page.
@@ -182,7 +183,7 @@ class HomeController extends Controller
         public function braces()
         {
             $data = [
-                'title' => 'Braces',
+                'title' => 'Braces/Orthodontic treatments',
             ];
             return view('guest.services.braces', $data);
         }
@@ -343,9 +344,17 @@ class HomeController extends Controller
     public function gallery()
     {
         $data = [
-            'title' => 'Gallery / Testimonials',
+            'title' => 'Gallery',
         ];
         return view('guest.gallery', $data);
+    }
+
+    public function testimonials()
+    {
+        $data = [
+            'title' => 'Testimonials',
+        ];
+        return view('guest.testimonials', $data);
     }
 
     public function technology()
@@ -390,14 +399,14 @@ class HomeController extends Controller
         $cv = $request->file('cv');
         $message = $request->input('message');
 
-        // //Upload.
-        // if($request->hasFile('cv')){
-        //     $date = date('Y-m-d');
-        //     $url = 'uploads/applications/' . $date;
-        //     $img_name = time() . rand(1, 100) . '.' . $request->cv->extension();
-        //     $request->cv->move(public_path($url), $img_name);
-        //     $img_path = $url . $img_name;
-        // }
+        //Upload.
+        if($request->hasFile('cv')){
+            $date = date('Y-m-d');
+            $url = 'uploads/applications/' . $date;
+            $img_name = time() . rand(1, 100) . '.' . $request->cv->extension();
+            $request->cv->move(public_path($url), $img_name);
+            $img_path = $url . '/' . $img_name;
+        }
 
         //New application.
         $application = new Application;
@@ -410,15 +419,16 @@ class HomeController extends Controller
         $result = $application->save();
 
         $details = array(
-            'to_email' => $this->support_email,
+            'to_email' => $this->info_email,
             'name' => $name,
             'email' => $email,
             'phone' => $phone,
+            // 'img_url' => $img_path,
             'cv' => $cv,
             'message' => $message,
         );
 
-        \Mail::send(new \App\Mail\ApplicationMail($details));
+        Mail::to($this->info_email)->send(new ApplicationMail($details, "email.mailuser", $name, $details['cv']));
 
         //7. Validate result.
         if(count(Mail::failures()) == 0){
@@ -449,6 +459,14 @@ class HomeController extends Controller
         $date = $request->input('date');
         $time = $request->input('time');
         $message = $request->input('message');
+        $message = "Name: " . $name . "\n"
+         . "Address: " . $address . "\n"
+         . "Phone: " . $phone . "\n"
+         . "Email: " . $email . "\n"
+         . "Date: " . $date . "\n"
+         . "Time: " . $time . "\n"
+         . "Message: " . "\n" . "\n" . $message;
+        $headers = "From: " . $email;
 
         // //Add appointment operation.
         // $appointment = new Appointment;
@@ -463,12 +481,12 @@ class HomeController extends Controller
         // $result = $appointment->save();
 
         //Send email.
-        $result = mail("tturihamwe@gmail.com", "Test email", "Test email");
+        $result = mail($this->appointments_email, "New appointment", $message, $headers);
 
         //7. Validate result.
         if($result){
             // logToDB("create_appointment_success", "Appointment #{$appointment->code} successful.", NULL, NULL, $username, "user", 1);
-            return back()->with("success", "Appointment submitted successfully. Your reference code is ");
+            return back()->with("success", "Appointment submitted successfully.");
             // return back()->with("success", "Appointment submitted successfully. Your reference code is " . $appointment->code);
         }else{
             // logToDB("create_appointment_error", "Appointment #{$appointment->code} unsuccessful.", NULL, NULL, $username, "user", 1);
@@ -489,28 +507,37 @@ class HomeController extends Controller
         //1. Validate request.
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
             'phone' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
             'subject' => 'required|string|max:255',
             'message' => 'required|string',
         ]);
 
         //2. Capture inputs.
         $name = $request->input('name');
-        $email = $request->input('email');
         $phone = $request->input('phone');
+        $email = $request->input('email');
         $subject = $request->input('subject');
         $message = $request->input('message');
+        $message = "Name: " . $name . "\n"
+         . "Phone: " . $phone . "\n"
+         . "Email: " . $email . "\n"
+         . "Subject: " . $subject . "\n"
+         . "Message: " . "\n" . "\n" . $message;
+        $headers = "From: " . $email;
 
-        //Add contact message operation.
-        $contact = new Message;
-        $contact->code = 'PCMSG' . Str::random(5);
-        $contact->name = $name;
-        $contact->email = $email;
-        $contact->phone = $phone;
-        $contact->subject = $subject;
-        $contact->description = $message;
-        $result = $contact->save();
+        // //Add contact message operation.
+        // $contact = new Message;
+        // $contact->code = 'PCMSG' . Str::random(5);
+        // $contact->name = $name;
+        // $contact->email = $email;
+        // $contact->phone = $phone;
+        // $contact->subject = $subject;
+        // $contact->description = $message;
+        // $result = $contact->save();
+
+        //Send email.
+        $result = mail($this->info_email, "New contact message: " . $subject, $message, $headers);
 
         //7. Validate result.
         if($result){

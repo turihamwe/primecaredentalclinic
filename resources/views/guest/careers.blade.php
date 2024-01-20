@@ -27,7 +27,7 @@
 		</div> --}}
 		<div class="row">
 			<div class="col-lg-12 col-md-6 vkjd">
-				<p>Are you a dynamic and organized individual with a passion for providing exceptional customer service? {{ config('app.name') }} is a modern and patient-focused dental practice dedicated to providing top quality oral healthcare. Our experienced team of dentists and specialists is committed to delivering comprehensive dental services in a warm and welcoming environment. From routine check-ups and cleanings to advanced treatments like dental implants and cosmetic procedures, we prioritize your oral health and overall well-being. At {{ config('app.name') }}, we aim to create healthy, beautiful smiles for our patients, emphasizing personalized care and cutting-edge technology to ensure the best possible outcomes. Your smile is our priority.</p><br>
+				<p>Are you a dynamic and organized individual with a passion for providing exceptional customer service in a professional setting?</p><br>
 				{{-- <p class="text-info"><i class="fa fa-info-circle"></i> We are hiring. If you've got what it takes, we want to work with you. Please find the form <a href="#form" class="text-warning text-bold"><b><u>here</u></b></a> and send us your application to get started.</p><br> --}}
 				<p class="text-info"><i class="fa fa-info-circle"></i> We are hiring. If you've got what it takes, we want to work with you. You may apply for the job positions below;</p><br>
 			</div>
@@ -38,12 +38,12 @@
             <p><b>Reports to:</b> Operations Director</p>
             {{-- <p><b>Company site:</b> <a class="text-info">www.primecaredentalclinics.com</a></p> --}}
             <p><b>Job summary:</b></p>
-            <p>We are currently looking for a dedicated Call center manager/Administrator to join our Sales and marketing team. In this role, you will handle inbound and outbound calls, address customer inquiries, and ensure timely issue resolution. Additionally, you will perform vital administrative tasks;</p>
+            <p>We are looking for a dedicated call center manager/administrator to join our sales and marketing team. In this role, you will handle inbound and outbound calls, address customer inquiries, and ensure timely issue resolution. Additionally, you will perform vital administrative tasks;</p>
             <div class="col-lg-6 col-md-6 vkjd mt-4">
-                <p><b>Key Responsibilities:</b></p>
+                <p><b>Key responsibilities:</b></p>
                 <ul>
                     <li style="list-style: disc;">Manage inbound and outbound calls, delivering outstanding customer service.</li>
-                    <li style="list-style: disc;">Resolve customer complaints, escalating issues when necessary and patient follow up.</li>
+                    <li style="list-style: disc;">Resolve customer complaints, escalating issues when necessary and patient follow-up.</li>
                     <li style="list-style: disc;">Generate reports, monitor and follow up on tasks, and strive for 100% customer satisfaction.</li>
                     <li style="list-style: disc;">Maintain adequate stock levels to facilitate same-day deliveries.</li>
                     <li style="list-style: disc;">Collaborate with team members to identify and address emerging issues.</li>
@@ -69,10 +69,10 @@
             {{-- <p><b>Organization: {{ config('app.name') }}</b></p>
             <p><b>Location: Kampala, Uganda</b></p> --}}
             {{-- <p><b>Company site:</b> <a class="text-info">www.primecaredentalclinics.com</a></p> --}}
-            <p><b>Job Summary:</b></p>
-            <p>As the Human Resource Operations Officer, you will play a pivotal role in facilitating and enhancing HR operations transaction services in collaboration with Line Managers and the HR Team at {{ config('app.name') }}.</p>
+            <p><b>Job summary:</b></p>
+            <p>As the Human Resource Operations Officer, you will play a pivotal role in facilitating and enhancing HR operations in collaboration with Line Managers and the HR Team at {{ config('app.name') }}.</p>
             <div class="col-lg-6 col-md-6 vkjd mt-4">
-            <p><b>Key Responsibilities:</b></p>
+            <p><b>Key responsibilities:</b></p>
             <ul>
                 <li style="list-style: disc;">Manage and update employee-related data in the HRMIS and physical files.</li>
                 <li style="list-style: disc;">Ensure compliance with HR policies, implement policy changes, and keep staff informed.</li>
@@ -101,10 +101,10 @@
             <h2><i class="fa fa-list"></i> Position: Accountant</h2>
             <p><b>Reports to:</b> Operations Director</p>
             {{-- <p><b>Company site:</b> <a class="text-info">www.primecaredentalclinics.com</a></p> --}}
-            <p><b>Job Summary:</b></p>
-            <p>{{ config('app.name') }} is seeking a dedicated and skilled Accountant to join our team. As an integral part of our dental practice, you will be responsible for managing our financial records, ensuring compliance, and contributing to the overall success of the clinic. If you have a strong background in accounting and are ready to make a difference in a healthcare environment, we'd love to hear from you.</p>
+            <p><b>Job summary:</b></p>
+            <p>{{ config('app.name') }} is seeking a dedicated and skilled accountant to join our team. As an integral part of our dental practice, you will be responsible for managing our financial records, ensuring compliance, and contributing to the overall success of the clinic. If you have a strong background in accounting and are ready to make a difference in a healthcare environment, we'd love to hear from you.</p>
             <div class="col-lg-6 col-md-6 vkjd mt-4">
-                <p><b>Key Responsibilities:</b></p>
+                <p><b>Key responsibilities:</b></p>
                 <ul>
                     <li style="list-style: disc;">Maintain accurate financial records and ledgers.</li>
                     <li style="list-style: disc;">Prepare and analyze financial reports.</li>
@@ -126,13 +126,13 @@
             {{-- <p>If you are ready to contribute to a dynamic team and uphold the standards of {{ config('app.name') }}, we encourage you to send your resume and application to info@primecaredentalclinics.com and dentalclinicsprimecare@gmail.com by 12th/December/2023. Join us in delivering exceptional care to our valued customers.</p> --}}
         </div>
         <div class="row mt-5">
-            <h2><i class="fa fa-list"></i> Position:</b> Front Desk Administrator</h2>
+            <h2><i class="fa fa-list"></i> Position:</b> Front-desk Administrator</h2>
             <p><b>Reports to:</b> Operations Director</p>
             {{-- <p><b>Company site:</b> <a class="text-info">www.primecaredentalclinics.com</a></p> --}}
-            <p><b>Job Summary:</b></p>
-            <p>{{ config('app.name') }} is in search of a friendly and efficient Front Desk Administrator to be the welcoming face of our clinic. If you thrive in a fast-paced environment, excel at multitasking, and have a passion for providing exceptional customer service, we want to meet you!</p>
+            <p><b>Job summary:</b></p>
+            <p>{{ config('app.name') }} is in search of a friendly and efficient Front-desk Administrator to be the welcoming face of our clinic. If you thrive in a fast-paced environment, excel at multitasking, and have a passion for providing exceptional customer service, we want to meet you!</p>
             <div class="col-lg-6 col-md-6 vkjd mt-4">
-                <p><b>Key Responsibilities:</b></p>
+                <p><b>Key responsibilities:</b></p>
                 <ul>
                     <li style="list-style: disc;">Greet and assist patients in a courteous and professional manner.</li>
                     <li style="list-style: disc;">Manage appointment scheduling and confirmations.</li>
@@ -146,13 +146,13 @@
                 <ul>
                     <li style="list-style: disc;">Strong interpersonal and communication skills.</li>
                     <li style="list-style: disc;">Exceptional organizational abilities.</li>
-                    <li style="list-style: disc;">Previous experience in customer service or front desk roles.</li>
+                    <li style="list-style: disc;">Previous experience in customer service or front-desk roles.</li>
                     <li style="list-style: disc;">Proficiency in office software and scheduling systems.</li>
                     <li style="list-style: disc;">Empathy and patience in dealing with patients.</li>
                     <li style="list-style: disc;">Experience in a dental clinic setting is an added advantage.</li>
                 </ul>
             </div>
-            <p>If you are ready to contribute to a dynamic team and uphold the standards of {{ config('app.name') }}, we encourage you to send your resume and application by filling the form below <b>by the 12th/December/2023</b>. Join us in delivering exceptional dental care to our valued customers.</p>
+            <p>If you are ready to contribute to a dynamic team to deliver exceptional dental care to our valued customers and uphold the standards at {{ config('app.name') }}, we encourage you to send your resume and application to <b>{{ env('EMAIL_INFO') }}</b>.</p>
 		</div>
 		{{-- <div class="row">
 			<div class="col-lg-12 col-md-6 vkjd">
@@ -170,7 +170,7 @@
 				<p>This career policy is designed to support employee growth, foster a positive work environment, and ensure equal opportunities for all. We are committed to implementing and upholding this policy to attract, develop, and retain talented professionals in the dental field.</p><br>
 			</div>
 		</div> --}}
-		<div id="form" class="col-sm-12 mt-5 mb-5">
+		{{-- <div id="form" class="col-sm-12 mt-5 mb-5">
 			<h2 style="font-size:18px">Application form</h2>
 			<p>Please fill your details and submit the form and we shall contact you when you are short-listed.</p><br>
 			<form action="{{ route('careers-submit') }}" method="POST" enctype="multipart/form-data">
@@ -178,25 +178,25 @@
 
 				<div class="row">
 					<div style="padding-top:10px;" class="col-sm-3"><label>Full name:</label></div>
-					<div class="col-sm-8"><input name="name" type="text" placeholder="" class="form-control input-sm"></div>
+					<div class="col-sm-8"><input name="name" type="text" placeholder="" class="form-control input-sm" required></div>
 				</div>
 				<div style="margin-top:10px;" class="row">
 					<div style="padding-top:10px;" class="col-sm-3"><label>Email address:</label></div>
-					<div class="col-sm-8"><input name="email" type="email" placeholder="" class="form-control input-sm"></div>
+					<div class="col-sm-8"><input name="email" type="email" placeholder="" class="form-control input-sm" required></div>
 				</div>
 				<div style="margin-top:10px;" class="row">
 					<div style="padding-top:10px;" class="col-sm-3"><label>Mobile number:</label></div>
-					<div class="col-sm-8"><input name="phone" type="text" placeholder="" class="form-control input-sm"></div>
+					<div class="col-sm-8"><input name="phone" type="text" placeholder="" class="form-control input-sm" required></div>
 				</div>
 				<div style="margin-top:10px;" class="row">
 					<div style="padding-top:10px;" class="col-sm-3"><label>Upload your CV, cover letter and academic transcripts (All in 1 PDF document):</label></div>
-					{{-- <div class="col-sm-8"><input name="subject" type="text" placeholder="" class="form-control input-sm"  ></div> --}}
-					<div class="col-sm-8"><input name="cv" type="file" class="form-control input-sm"></div>
+					<!-- <div class="col-sm-8"><input name="subject" type="text" placeholder="" class="form-control input-sm" required></div> -->
+					<div class="col-sm-8"><input name="cv" type="file" class="form-control input-sm" required></div>
 				</div>
 				<div style="margin-top:10px;" class="row">
 					<div style="padding-top:10px;" class="col-sm-3"><label>Your message:</label></div>
 					<div class="col-sm-8">
-						<textarea name="message" rows="5" placeholder="Something brief about you" class="form-control input-sm"></textarea>
+						<textarea name="message" rows="5" placeholder="Something brief about you" class="form-control input-sm" required></textarea>
 					</div>
 				</div>
 				<div style="margin-top:10px;" class="row">
@@ -206,7 +206,7 @@
 					</div>
 				</div>
 			</form>
-		</div>
+		</div> --}}
 	</div>
 </div>
 

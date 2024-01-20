@@ -44,6 +44,7 @@ class ApplicationMail extends Mailable
                 'cv' => $this->details['cv'],
                 'email' => $this->details['email'],
                 'phone' => $this->details['phone'],
+                'img_url' => $this->details['img_url'],
                 // 'subject' => $this->details['subject'],
                 'message' => $this->details['message'],
             ])

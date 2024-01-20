@@ -64,6 +64,7 @@ Route::namespace('App\Http\Controllers\Guest')->group(function (){
     Route::get('partnerships', 'HomeController@partnerships')->name('partnerships');
     Route::get('insurance', 'HomeController@insurance')->name('insurance');
     Route::get('gallery', 'HomeController@gallery')->name('gallery');
+    Route::get('testimonials', 'HomeController@testimonials')->name('testimonials');
     Route::get('technology', 'HomeController@technology')->name('technology');
     Route::get('appointment', 'HomeController@appointment')->name('appointment');
     Route::post('appointment', 'HomeController@appointment_post')->name('appointment');

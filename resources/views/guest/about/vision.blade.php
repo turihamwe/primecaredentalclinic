@@ -27,7 +27,7 @@
 		</div> --}}
 		<div class="row">
 			<div class="col-lg-12 col-md-6 vkjd">
-				<p>To become the center of dental excellence and most sought dental service provider in Uganda offering the highest quality of family and cosmetic dental services in the most hospitable setup. In achieving so, Primecare dental clinic will meet patients' expectations by using the highest quality dental products and take advantage of leading dental technologies.</p><br>
+				<p>To become the center of dental excellence and the most sought after dental service provider in Uganda offering the highest quality of family and cosmetic dental services in the most hospitable setup. We will meet our patients' expectations by using the highest quality dental products and take advantage of leading dental technologies.</p><br>
 			</div>
 		</div>
 	</div>

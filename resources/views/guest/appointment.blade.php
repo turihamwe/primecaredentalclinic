@@ -9,7 +9,7 @@
 	<div class="container">
 
 		@include('layouts.messages')
-		
+
 		<div class="row">
 			<div style="padding:20px" class="col-sm-6">
 				<h2 style="font-size:18px">{{ $title }}</h2>
@@ -18,7 +18,7 @@
 					@csrf
 
 					<div class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Enter name*:</label></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Your name*:</label></div>
 						<div class="col-sm-8"><input name="name" type="text" placeholder="Eg. John Doe" class="form-control input-sm" required></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
@@ -26,7 +26,7 @@
 						<div class="col-sm-8"><input name="address" type="text" placeholder="Eg. Kyengera, Kampala" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Mobile number*:</label></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Phone number*:</label></div>
 						<div class="col-sm-8"><input name="phone" type="text" placeholder="Eg. 256784392100" class="form-control input-sm" required></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
@@ -38,7 +38,7 @@
 						<div class="col-sm-8"><input name="date" type="date" class="form-control input-sm"></div>
 					</div>
 					<div style="margin-top:10px;" class="row">
-						<div style="padding-top:10px;" class="col-sm-3"><label>Time*:</label></div>
+						<div style="padding-top:10px;" class="col-sm-3"><label>Preferred time*:</label></div>
 						<div class="col-sm-8">
 							<select name="time" id="time" class="form-control input-sm">
 								<option value="">Select</option>
@@ -78,9 +78,9 @@
 				</div>
 				<div style="margin:50px" class="serv">
 					<h2 style="margin-top:10px;">Payment methods</h2>
-					<p>Mobile money MTN: <b>077...</b></p>
-					<p>Mobile money Airtel: <b>075...</b></p>
-						<p>Equity till number: <b>023415</b></p>
+					<p>MTN Mobile money: <b>{{ env('PHONE_1') }}</b></p>
+					<p>Airtel money: <b>{{ env('PHONE_3') }}</b></p>
+					<p>Equity till number: <b>{{ env('PAY_EQUITY') }}</b></p>
 				</div>
 			</div>
 		</div>

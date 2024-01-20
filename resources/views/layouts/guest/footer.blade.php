@@ -3,8 +3,8 @@
 				<div class="row">
 					<div class="col-md-3 col-sm-12">
 						<h2>About Us</h2>
-						<p>{{ config('app.name') }} is a leading provider of dental services. Our dedicated employees offer strategic insights, technological expertise and industry experience.</p>
-						<p>We focus on technologies that promise to reduce costs, streamline processes and speed time-to-market, Backed by our strong quality processes and rich experience managing global.</p>
+						<p>{{ config('app.name') }} is a leading provider of dental services in Kampala, Uganda. It is a modern and patient-focused dental practice dedicated to providing top-quality oral healthcare.</p>
+						<p>Our experienced team of dentists is committed to delivering comprehensive dental services in a warm and welcoming environment. Your smile is our priority!</p>
 						<p>&nbsp;</p><br>
 					</div>
 					<div class="col-md-3 col-sm-12">
@@ -55,7 +55,7 @@
 				</span>
 			</div>
 		</div>
-		
+
 		{{-- Whatsapp chat
 		<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 		<div class="elfsight-app-52757dc5-40a0-44d5-b97f-0a3a62b2d899"></div> --}}

@@ -18,7 +18,7 @@
 					<li class="list-group-item border-0">3. Periodontal care & Root planing: When necessary, we perform deep cleanings to treat gum disease and other periodontal problems.</li>
 					<li class="list-group-item border-0">4. X-rays: A dentist may take dental x-rays to help dentists diagnose and treat dental problems.</li>
 				</ul><br>
-				<p>Overall, this aspect of dental care plays a critical role in maintaining optimal oral health and preventing dental problems. We provide preventive care and education to patients, dental hygienists help ensure that patients have healthy teeth and gums for a lifetime.</p><br>
+				<p>Overall, this aspect of dental care plays a critical role in maintaining optimal oral health and preventing dental problems. We provide preventive care and education to patients. Dental hygienists help ensure that patients have healthy teeth and gums for a lifetime.</p><br>
 			</div>
 		</div>
 		<div class="btn-ro text-center">

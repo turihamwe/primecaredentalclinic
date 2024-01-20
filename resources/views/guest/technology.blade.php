@@ -9,7 +9,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<img src="{{ asset('images/about.jpg') }}" alt="">
+				<img src="{{ asset('images/brackground_6.jpg') }}" alt="Digital dental X-rays">
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<h2>Digital dental X-rays</h2>
@@ -22,12 +22,12 @@
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
 				<h2>Intraoral camera</h2>
-				<p>An intraoral camera is a small handheld device we use to dentists to capture images of a patient's mouth and teeth. The camera is typically connected to a monitor and can capture high-quality images of the inside of the mouth, including the teeth, gums, and tongue.</p><br>
+				<p>An intraoral camera is a small handheld device we use in dentistry to capture images of a patient's mouth and teeth. The camera is typically connected to a monitor and can capture high-quality images of the inside of the mouth, including the teeth, gums, and tongue.</p><br>
 				<p>The camera is designed to be small and easy to maneuver, allowing the doctor to capture images of hard-to-see areas in the mouth. The camera is also equipped with a variety of different lenses and attachments to capture different types of images and to magnify the image for greater detail.</p><br>
 				<p>It assists the dentist in diagnosing dental problems and to plan treatment. By capturing images of the inside of the mouth, the dentist can get a better understanding of a patient's oral health and develop a personalized treatment plan. Intraoral cameras can also be used to educate you about your dental health by showing you images of your teeth and explaining any issues that may be present.</p>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<img src="{{ asset('images/about.jpg') }}" alt="">
+				<img src="{{ asset('images/about.jpg') }}" alt="Intraoral camera">
 			</div>
 		</div>
 	</div>
@@ -49,7 +49,7 @@
 				<h2 class="text-center">Infection control</h2>
 				<p>Dental clinics attend to a number of patients every day. Therefore, there is a risk of infectious diseases spreading between patients and dental staff through contaminated instruments and surfaces. Oral bacteria present may be passed via blood or saliva, resulting in the contamination of dental equipment and surfaces.</p><br>
 				<p>To successfully control and prevent the spread of infectious diseases, we implement strict sterilization protocols and ensure surfaces are disinfected every after one patient. We adhere to the Ministry of health and WHO infection control procedures. </p><br>
-				<p>Therefore, here at Primecare Dental clinics, we follow a strict hygiene protocol so that you are at ease during treatments and procedures.</p><br>
+				<p>Therefore, here at Primecare Dental clinic, we follow a strict hygiene protocol so that you are at ease during treatments and procedures.</p><br>
 				<p>To prevent the spread of infection, some of the safety protocol we practice at our clinic include: the use of disposable one-time-use equipment to remove blood and saliva from the mouth, disposing of root canal files after each use, and the use of industrial-grade machinery and devices to provide contemporary technology and ensure clinical sterility and safety in our clinics. </p><br>
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item border-0">1. All dentists and assistants wear clean personal protective equipment—a scrub apron, eyewear, disposable gloves and face masks;</li>
@@ -58,10 +58,10 @@
 					<li class="list-group-item border-0">4. Dental chairs are cleansed with disinfectant before and after every treatment procedure;</li>
 					<li class="list-group-item border-0">5. Patients are given a protective eye protector to protect their eyes during dental treatments;</li>
 					<li class="list-group-item border-0">6. Antimicrobial mouth rinses are provided just before a dental procedure to reduce contamination;</li>
-					<li class="list-group-item border-0">7. During surgeries, patients' faces are protected with a sterilized face mask. Solely part of the cheek, chin, lips are disinfected using Iodine;</li>
+					<li class="list-group-item border-0">7. During surgeries, patients' faces are protected with a sterilized face mask. Solely part of the cheek, chin and lips are disinfected using Iodine;</li>
 					<li class="list-group-item border-0">8. Disinfection is carried out with chlorhexidine mouthwash after the surgery.</li>
 				</ul><br>
-				<p>We ensure that these protocols are strictly adhered to by all dentists and clinic staff.</p><br>
+				<p>We ensure that these protocols are strictly adhered to by all dentists and clinical staff.</p><br>
 			</div>
 		</div>
 	</div>

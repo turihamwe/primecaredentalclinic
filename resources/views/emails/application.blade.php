@@ -15,7 +15,7 @@ Regarding: {{ $department2 }}<br>
 Subject: {{ $subject }}<br>
 Message: {{ $message }}<br> --}}
 
-@component('mail::button', ['url' => $img_path])
+@component('mail::button', ['url' => $img_url])
 Reply
 @endcomponent
 

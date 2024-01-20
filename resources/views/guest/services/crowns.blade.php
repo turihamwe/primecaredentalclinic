@@ -32,7 +32,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<h2>Precious Metal Crowns</h2>
+				<h2>Precious metal crowns</h2>
 				<p>Precious metals such as gold, silver, platinum, and palladium, have many suitable qualities for use as a crown. They are strong and long-lasting if well looked after. They are corrosion-resistant, produce a precise fit over your tooth and live harmoniously with your neighboring and opposing tooth. However, the main drawback of precious metal crowns for many patients is their metallic color. Therefore, precious metal crowns are typically solely recommended for back molar teeth, where they can be less conspicuous.</p><br>
 			</div>
 			<div class="col-md-6 col-sm-12">
@@ -45,8 +45,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<h2>Porcelain-Fused-With-Metal Crowns</h2>
-				<p>Porcelain-fused-with-Metal crowns attempt to mask the metallic color of a metal crown by adding a layer of dental porcelain over the metal to give an aesthetic, tooth-colored appearance. These crowns are suitable on almost all the teeth in your mouth, even your front ones. But, they require the removal of more tooth substance than precious metal crowns to accommodate for the additional porcelain. The porcelain can peel off, being less durable than metal.</p><br>
+				<h2>Porcelain-fused-with-metal crowns</h2>
+				<p>Porcelain-fused-with-metal crowns attempt to mask the metallic color of a metal crown by adding a layer of dental porcelain over the metal to give an aesthetic, tooth-colored appearance. These crowns are suitable on almost all the teeth in your mouth, even your front ones. But, they require the removal of more tooth substance than precious metal crowns to accommodate for the additional porcelain. The porcelain can peel off, being less durable than metal.</p><br>
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<img src="{{ asset('images/services/porcelain-fused-metal-crown.jpg') }}" alt="">
@@ -58,7 +58,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<h2>Lithium Disilicate Crowns</h2>
+				<h2>Lithium disilicate crowns</h2>
 				<p>Lithium disilicate crowns are a type of full ceramic crown that are tooth-colored, very natural looking, and have considerable strength and durability. They can be used on your front, premolar and molar teeth. Patients who desire an aesthetic-looking crown, and do not like the idea of having any metal placed in their mouth can have their expectations fulfilled with lithium disilicate crowns.  These ceramic crowns also take advantage of CAD-CAM digital design and fabrication.</p><br>
 			</div>
 			<div class="col-md-6 col-sm-12">
@@ -71,7 +71,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<h2>Zirconia Crowns</h2>
+				<h2>Zirconia crowns</h2>
 				<p>Zirconia crowns are full ceramic crowns that are tooth-colored, with very good aesthetic properties and very high strength and durability. They tend to be used on premolar or molar teeth, and for patients who do not like the idea of having any metal in their mouth. Similar to lithium disilicate crowns, CAD-CAM digital technology can be used for their construction.</p><br>
 			</div>
 			<div class="col-md-6 col-sm-12">
@@ -84,7 +84,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<h2>Stainless Steel Crowns</h2>
+				<h2>Stainless steel crowns</h2>
 				<p>Stainless steel crowns are mainly used on children's baby molar teeth to stop decay or to protect their weakened tooth structure after a pulpotomy or pulpectomy.</p><br>
 			</div>
 			<div class="col-md-6 col-sm-12">

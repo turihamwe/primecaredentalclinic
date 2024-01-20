@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="inner-title">
 			<h2>{{ $title }}</h2>
-			<p>Take a look at some of our key features</p>
+			<p>Take a look at our services</p>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
@@ -50,7 +50,7 @@
 					{{-- <i class="fa fa-h-square"></i> --}}
 					<img src="{{ asset('images/services/icons/veneers.jpg') }}" alt="">
 					<h5>Veneers</h5>
-					<p>Porcelain veneers are thin shells fabricated out of porcelain which fit precisely over the front surfaces of front teeth.</p>
+					<p>Porcelain veneers are thin shells fabricated out of porcelain which fit precisely over the surfaces of front teeth.</p>
 					<a href="{{ route('veneers') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
@@ -202,7 +202,7 @@
 				<div class="single-key">
 					{{-- <i class="fa fa-heart"></i> --}}
 					<img src="{{ asset('images/services/icons/teeth-cleaning.jpg') }}" alt="">
-					<h5>Teeth cleaning (Scaling and polishing)</h5>
+					<h5>Teeth cleaning</h5>
 					<p>This involves removing plaque, tartar, and stains from teeth to improve oral hygiene and prevent cavities and gum disease.</p>
 					<a href="{{ route('teeth-cleaning') }}" class="text-primary">Read more</a>
 				</div>
@@ -221,7 +221,7 @@
 					{{-- <i class="fa fa-medkit"></i> --}}
 					<img src="{{ asset('images/services/icons/intraoral-camera.jpg') }}" alt="">
 					<h5>Intra-oral camera</h5>
-					<p>An intraoral camera is a small handheld device we use to dentists to capture images of a patient's mouth and teeth.</p>
+					<p>An intraoral camera is a small handheld device we use in dentistry to capture images of a patient's mouth and teeth.</p>
 					<a href="{{ route('intraoral-camera') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
@@ -266,7 +266,7 @@
 					{{-- <i class="fas fa-user-md"></i> --}}
 					<img src="{{ asset('images/services/icons/bad-breath-treatment.jpg') }}" alt="">
 					<h5>Bad breath treatment</h5>
-					<p>Treatment of bad breath helps in the increased confidence in social situations amongst family and friends.</p>
+					<p>Treatment of bad breath helps increase confidence in social situations amongst family and friends.</p>
 					<a href="{{ route('bad-breath-treatment') }}" class="text-primary">Read more</a>
 				</div>
 			</div>
