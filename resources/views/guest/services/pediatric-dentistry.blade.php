@@ -11,8 +11,9 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				{{-- <h2>Welcome to {{ config('app.name') }}</h2> --}}
-				<p>Pediatric dentistry focuses on managing dental ailments in young children. Our team is skilled in dealing with young children, pre-teens, and adolescents e.g, teething problems, and early childhood caries. If it is your child's first visit to the dentist, and they need to get their baby teeth or primary teeth checked, they need to be made comfortable. Prior to and during your child's dental treatment, our dental team will explain each stage of the procedure to you and them in a child-friendly manner, so that they are able to understand and know what to expect.  According to each child's dental needs, the following types of dental treatment may be required:</p><br>
-				<ul class="list-group list-group-flush">
+				<p>Pediatric dentistry focuses on managing dental ailments in young children. Our team is skilled in dealing with young children, pre-teens, and adolescents e.g, teething problems, and early childhood caries. If it is your child's first visit to the dentist, and they need to get their baby teeth or primary teeth checked, they need to be made comfortable. Prior to and during your child's dental treatment, our dental team will explain each stage of the procedure to you and them in a child-friendly manner, so that they are able to understand and know what to expect.  According to each child's dental needs, the following types of dental treatment may be required: Extraction, Topical fluoride, Diet education, Filling, Myo brace, Pulpectomy, Pulpotomy, Scale and polish, Stainless steel crown and Teeth straightening.</p><br>
+                </p>
+				{{-- <ul class="list-group list-group-flush">
 					<li class="list-group-item border-0">1. Extraction</li>
 					<li class="list-group-item border-0">2. Topical fluoride</li>
 					<li class="list-group-item border-0">3. Diet education</li>
@@ -23,7 +24,7 @@
 					<li class="list-group-item border-0">8. Scale and polish</li>
 					<li class="list-group-item border-0">9. Stainless steel crown</li>
 					<li class="list-group-item border-0">10. Teeth straightening</li>
-				</ul><br>
+				</ul><br> --}}
 				<h2>Does your child need to visit a dentist?</h2>
 				<p>At your child's dental visit, our team will fully inform you of what preventive steps, mainly involving oral hygiene and dietary habits your child can use to reduce the risk of dental illnesses. Our team will discuss with you and the essentials of your active engagement in your child's dental health care and development by:</p>
 				<p>-Bringing them for regular dental check-ups;</p>

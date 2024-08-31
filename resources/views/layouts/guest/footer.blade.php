@@ -11,7 +11,7 @@
 						<h2>&nbsp;</h2>
 						<ul class="list-unstyled link-list">
 							<li><a ui-sref="about" href="{{ route('/') }}">Home</a><i class="fa fa-angle-right"></i></li>
-							<li><a ui-sref="portfolio" href="{{ route('about') }}">About us</a><i class="fa fa-angle-right"></i></li>
+							<li><a ui-sref="portfolio" href="{{ route('about') }}">About Primecare</a><i class="fa fa-angle-right"></i></li>
 							<li><a ui-sref="products" href="{{ route('services') }}">Services</a><i class="fa fa-angle-right"></i></li>
 							<li><a ui-sref="gallery" href="{{ route('appointment') }}">Appointment</a><i class="fa fa-angle-right"></i></li>
 							<li><a ui-sref="gallery" href="{{ route('contact') }}">Contact us</a><i class="fa fa-angle-right"></i></li>
@@ -21,12 +21,12 @@
 					<div class="col-md-3 col-sm-12">
 						<h2>&nbsp;</h2>
 						<ul class="list-unstyled link-list">
-							<li><a ui-sref="about" href="{{ route('/') }}">Home</a><i class="fa fa-angle-right"></i></li>
-							<li><a ui-sref="portfolio" href="{{ route('about') }}">About us</a><i class="fa fa-angle-right"></i></li>
-							<li><a ui-sref="products" href="{{ route('services') }}">Services</a><i class="fa fa-angle-right"></i></li>
-							<li><a ui-sref="gallery" href="{{ route('appointment') }}">Appointment</a><i class="fa fa-angle-right"></i></li>
-							<li><a ui-sref="gallery" href="{{ route('contact') }}">Contact us</a><i class="fa fa-angle-right"></i></li>
-							<li><a ui-sref="gallery" href="{{ route('careers') }}">Careers</a><i class="fa fa-angle-right"></i></li>
+							<li><a ui-sref="about" href="{{ route('technology') }}">Technology</a><i class="fa fa-angle-right"></i></li>
+							<li><a ui-sref="portfolio" href="{{ route('partnerships') }}">Partnerships</a><i class="fa fa-angle-right"></i></li>
+							<li><a ui-sref="products" href="{{ route('payments') }}">Payments</a><i class="fa fa-angle-right"></i></li>
+							<li><a ui-sref="gallery" href="{{ route('team') }}">Team</a><i class="fa fa-angle-right"></i></li>
+							<li><a ui-sref="gallery" href="{{ route('insurance') }}">Insurance</a><i class="fa fa-angle-right"></i></li>
+							<li><a ui-sref="gallery" href="{{ route('sustainability') }}">Sustainability</a><i class="fa fa-angle-right"></i></li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-sm-12 map-img">

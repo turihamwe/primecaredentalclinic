@@ -9,7 +9,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<img src="{{ asset('images/brackground_6.jpg') }}" alt="Digital dental X-rays">
+				<img src="{{ asset('images/brackground_7.jpg') }}" alt="Digital dental X-rays" style="float:right;">
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<h2>Digital dental X-rays</h2>
@@ -27,7 +27,7 @@
 				<p>It assists the dentist in diagnosing dental problems and to plan treatment. By capturing images of the inside of the mouth, the dentist can get a better understanding of a patient's oral health and develop a personalized treatment plan. Intraoral cameras can also be used to educate you about your dental health by showing you images of your teeth and explaining any issues that may be present.</p>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<img src="{{ asset('images/about.jpg') }}" alt="Intraoral camera">
+				<img src="{{ asset('images/about3.jpg') }}" alt="Intraoral camera">
 			</div>
 		</div>
 	</div>

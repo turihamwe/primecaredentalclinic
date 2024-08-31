@@ -40,14 +40,14 @@
 					{{-- <li title="About us"><a href="{{ route('about') }}" class="btn btn-sm btn-success">About us</a></li> --}}
 					<li>
 						<div class="dropdown">
-							<a href="{{ route('about') }}" class="btn btn-sm btn-success">About us</a>
+							<a href="{{ route('about') }}" class="btn btn-sm btn-success">About Primecare</a>
 							<div class="dropdown-content">
 								<a href="{{ route('about') }}">Who we are</a>
 							  	<a href="{{ route('vision') }}">Vision</a>
 							  	<a href="{{ route('mission') }}">Mission</a>
 							  	<a href="{{ route('values') }}">Core values</a>
 							  	<a href="{{ route('team') }}">Team</a>
-							  	<a href="{{ route('tutorials') }}">Education resources</a>
+							  	<a href="{{ route('tutorials') }}">Patient resources</a>
 							  	<a href="{{ route('technology') }}">Our technology</a>
 							  	<a href="{{ route('gallery') }}">Gallery</a>
 							  	<a href="{{ route('payments') }}">Payments</a>
@@ -74,10 +74,10 @@
 							  	<a href="{{ route('veneers') }}">Veneers</a>
 							  	<a href="{{ route('dental-checkup') }}">Dental check-up</a>
 							  	<a href="{{ route('dental-fillings') }}">Dental fillings</a>
-							  	<a href="{{ route('oral-disease-prevention') }}">Oral disease prevention</a>
-							  	<a href="{{ route('general-dentistry') }}">General dentistry</a>
-							  	<a href="{{ route('airflow-treatment') }}">Airflow treatment</a>
 							  	<a href="{{ route('services') }}">More services...</a>
+							  	{{-- <a href="{{ route('oral-disease-prevention') }}">Oral disease prevention</a> --}}
+							  	{{-- <a href="{{ route('general-dentistry') }}">General dentistry</a> --}}
+							  	{{-- <a href="{{ route('airflow-treatment') }}">Airflow treatment</a> --}}
 							  	{{-- <a href="{{ route('oral-surgery') }}">Oral surgery</a> --}}
 							  	{{-- <a href="{{ route('dental-hygiene') }}">Dental hygiene</a> --}}
 							  	{{-- <a href="{{ route('glass-ceramic-restorations') }}">Glass-ceramic restorations</a> --}}

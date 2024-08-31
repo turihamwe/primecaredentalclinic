@@ -25,40 +25,110 @@
 				<div class="row team-row">
 					<div class="col-md-3 col-sm-6">
 						<div class="single-usr">
-							<img src="{{ asset('images/insurance/uap.jpg') }}" alt="UAP insurance {{ config('app.name') }}">
+							<img src="{{ asset('images/insurance/liberty.jpg') }}" alt="AAR insurance {{ config('app.name') }}">
 							<div class="det-o">
-								<h4>UAP</h4>
-								{{-- <i>&nbsp;</i> --}}
+								<h4>Liberty</h4>
+								{{-- <i>Facial Surgan</i> --}}
 							</div>
 						</div>
 					</div>
+					{{-- <div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/aar.jpg') }}" alt="AAR insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>AAR</h4>
+								<!-- <i>Facial Surgan</i> -->
+							</div>
+						</div>
+					</div> --}}
+					<div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/case-medinsurance.jpg') }}" alt="Case medinsurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>Case medinsurance</h4>
+							</div>
+						</div>
+					</div>
+					{{-- <div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/prudential.jpg') }}" alt="Prudential insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>Prudential</h4>
+							</div>
+						</div>
+					</div> --}}
+					<div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/msh.jpg') }}" alt="MSH international {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>MSH international</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/cigna.jpg') }}" alt="Cigna insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>Cigna</h4>
+							</div>
+						</div>
+					</div>
+					{{-- <div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/mcf.jpg') }}" alt="Mastercard foundation {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>Mastercard foundation</h4>
+							</div>
+						</div>
+					</div> --}}
 					<div class="col-md-3 col-sm-6">
 						<div class="single-usr">
 							<img src="{{ asset('images/insurance/bupa.jpg') }}" alt="Bupa insurance {{ config('app.name') }}">
 							<div class="det-o">
 								<h4>Bupa</h4>
-								{{-- <i>&nbsp;</i> --}}
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/allianz.jpg') }}" alt="Allianz insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>Allianz</h4>
+							</div>
+						</div>
+					</div>
+					{{-- <div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/healix.jpg') }}" alt="Healix global {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>Healix global</h4>
+							</div>
+						</div>
+					</div> --}}
+					<div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/ga.jpg') }}" alt="GA insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>GA insurance</h4>
+							</div>
+						</div>
+					</div>
+					{{-- <div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/uap.jpg') }}" alt="UAP insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>UAP</h4>
+							</div>
+						</div>
+					</div> --}}
+					{{-- <div class="col-md-3 col-sm-6">
 						<div class="single-usr">
 							<img src="{{ asset('images/insurance/sanlam.jpg') }}" alt="Sanlam insurance {{ config('app.name') }}">
 							<div class="det-o">
 								<h4 style="font-size: 20px;">Sanlam</h4>
-								{{-- <i>Facial Surgan</i> --}}
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="single-usr">
-							<img src="{{ asset('images/insurance/aar.jpg') }}" alt="AAR insurance {{ config('app.name') }}">
-							<div class="det-o">
-								<h4>AAR</h4>
-								{{-- <i>Facial Surgan</i> --}}
-							</div>
-						</div>
-					</div>
+					</div> --}}
 				</div>
 			</div>
 		</div>

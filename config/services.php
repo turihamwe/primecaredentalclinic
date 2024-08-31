@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    // Configure Google Analytics 4 (GA4) measurement_id
+    'ga4' => [
+        'measurementId' => env('GA_MEASUREMENT_ID'),
+    ]
+
 ];

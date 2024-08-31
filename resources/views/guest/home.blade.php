@@ -12,7 +12,7 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="{{ asset('images/slider/slide-11.jpg') }}" alt="Welcome to {{ config('app.name') }}">
+				<img class="d-block w-100" src="{{ asset('images/slider/slide-1.jpg') }}" alt="Welcome to {{ config('app.name') }}">
 				<div class="carousel-caption d-none d-md-block">
 					<h5 class="bounceInDown text-white">Welcome to {{ config('app.name') }}</h5>
 					{{-- <p class=" bounceInLeft">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create them their lasting perfect smile. Set in Kololo Kampala, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p> --}}
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="{{ asset('images/slider/slide-22.jpg') }}" alt="Latest technology at {{ config('app.name') }}">
+				<img class="d-block w-100" src="{{ asset('images/slider/slide-2.jpg') }}" alt="Latest technology at {{ config('app.name') }}">
 				<div class="carousel-caption d-none d-md-block">
 					<h5 class=" bounceInDown text-white">Latest technology</h5>
 					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="{{ asset('images/slider/slide-33.jpg') }}" alt="Family dental services at {{ config('app.name') }}">
+				<img class="d-block w-100" src="{{ asset('images/slider/slide-3.jpg') }}" alt="Family dental services at {{ config('app.name') }}">
 				<div class="carousel-caption vdg-cur d-none d-md-block">
 					<h5 class=" bounceInDown">Family dental services</h5>
 					<p class=" bounceInLeft" style="background: #4b454b6e; font-weight:300;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
@@ -78,7 +78,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					{{-- <i class="far fa-thumbs-up"></i> --}}
-					<img src="{{ asset('images/services/icons/dental-implants.jpg') }}" alt="">
+					<img src="{{ asset('images/services/icons/2/dental-implants.jpg') }}" alt="">
 					<h5>Dental implants</h5>
 					<p>A surgical component that is placed into the jawbone to replace a missing tooth or teeth to give you a better smile.</p>
 					<a href="{{ route('dental-implants') }}" class="text-primary">Read more</a>
@@ -87,7 +87,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					{{-- <i class="fas fa-capsules"></i> --}}
-					<img src="{{ asset('images/services/icons/pediatric-dentistry.jpg') }}" alt="">
+					<img src="{{ asset('images/services/icons/2/pediatric-dentistry.jpg') }}" alt="">
 					<h5>Pediatric dentistry</h5>
 					<p>With Child dentistry, we focus on the dental health needs of infants, children, and adolescents.</p>
 					<a href="{{ route('pediatric-dentistry') }}" class="text-primary">Read more</a>
@@ -96,7 +96,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					{{-- <i class="fas fa-hospital-alt"></i> --}}
-					<img src="{{ asset('images/services/icons/braces.jpg') }}" alt="">
+					<img src="{{ asset('images/services/icons/2/braces.jpg') }}" alt="">
 					<h5>Braces</h5>
 					<p>Dental braces are devices used during orthodontic treatment to correct teeth alignment and bite issues.</p>
 					<a href="{{ route('braces') }}" class="text-primary">Read more</a>
@@ -105,7 +105,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					{{-- <i class="fa fa-medkit"></i> --}}
-					<img src="{{ asset('images/services/icons/crowns.jpg') }}" alt="">
+					<img src="{{ asset('images/services/icons/2/crowns.jpg') }}" alt="">
 					<h5>Crowns</h5>
 					<p>This is a tooth-shaped cap placed over a damaged or weakened tooth to restore its shape, strength, size, and appearance.</p>
 					<a href="{{ route('crowns') }}" class="text-primary">Read more</a>
@@ -114,7 +114,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					{{-- <i class="fa fa-h-square"></i> --}}
-					<img src="{{ asset('images/services/icons/veneers.jpg') }}" alt="">
+					<img src="{{ asset('images/services/icons/2/veneers.jpg') }}" alt="">
 					<h5>Veneers</h5>
 					<p>Porcelain veneers are thin shells fabricated out of porcelain which fit precisely over the front surfaces of front teeth.</p>
 					<a href="{{ route('veneers') }}" class="text-primary">Read more</a>
@@ -123,7 +123,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					{{-- <i class="fas fa-hospital-alt"></i> --}}
-					<img src="{{ asset('images/services/icons/dental-checkup.jpg') }}" alt="">
+					<img src="{{ asset('images/services/icons/2/dental-checkup.jpg') }}" alt="">
 					<h5>Dental check-up</h5>
 					<p>Visiting your dentist on a regular basis is an important part of your routine oral hygiene. Schedule your dental checkup today.</p>
 					<a href="{{ route('dental-checkup') }}" class="text-primary">Read more</a>
@@ -191,7 +191,7 @@
 			{{-- <p>Look for the Uganda Dental Association logo in the snaps folder and include “Member of Uganda Dental Association”.</p> --}}
 		</div>
 		<div class="row">
-			<div class="offset-md-2 col-md-4 col-sm-6">
+			<div class="col-md-3 col-sm-6">
 				<div class="single-key">
 					<img src="{{ asset('images/partners/uda.png') }}" alt="Uganda Dental Association {{ config('app.name') }}">
 					{{-- <h5>Oral disease prevention</h5> --}}
@@ -199,13 +199,23 @@
 					{{-- <a href="{{ route('/') }}">Read more</a> --}}
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-md-3 col-sm-6">
 				<div class="single-key">
 					<img src="{{ asset('images/partners/umdpc.png') }}" alt="Uganda medical and dental practitioners council {{ config('app.name') }}">
 				</div>
 			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/bimedis2.jpg') }}" alt="Bi medis {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/kevasha2.png') }}" alt="Kevasha suppliers {{ config('app.name') }}">
+				</div>
+			</div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
 			<div class="offset-md-2 col-md-4 col-sm-6">
 				<div class="single-key">
 					<img src="{{ asset('images/partners/bimedis.jpg') }}" alt="Bi medis {{ config('app.name') }}">
@@ -214,6 +224,63 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-key">
 					<img src="{{ asset('images/partners/crown-healthcare.png') }}" alt="Crown healthcare {{ config('app.name') }}">
+				</div>
+			</div>
+		</div> --}}
+        <div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/crown-healthcare2.png') }}" alt="Crown healthcare {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/ntvti.jpg') }}" alt="Ntinda Vocational Training Institute {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/medilink.jpg') }}" alt="Medilink world {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/aeb.jpg') }}" alt="Crown healthcare {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/axa.jpg') }}" alt="Crown healthcare {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/msh.jpg') }}" alt="MSH insurance {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/cigna.jpg') }}" alt="Cigna insurance {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/ga.jpg') }}" alt="GA insurance {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/case-medinsurance.jpg') }}" alt="Case medinsurance {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/bupa.jpg') }}" alt="Bupa Global {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/allianz.jpg') }}" alt="Allianz partners {{ config('app.name') }}">
 				</div>
 			</div>
 		</div>
