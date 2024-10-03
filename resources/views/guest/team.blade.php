@@ -8,7 +8,7 @@
 <div class="our-team">
 	<div class="container">
 		<div class="inner-title row">
-			<h2>{{ $title }}</h2>
+			<h2>{{ $title ?? "-" }}</h2>
 			{{-- <p>Take a look at our Team</p> --}}
 		</div>
 		<div class="row">

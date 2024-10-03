@@ -5,7 +5,7 @@
 <div class="about-us">
 	<div class="container">
 		<div class="inner-title">
-			<h1 class="text-center">{{ $title }}</h1>
+			<h1 class="text-center">{{ $title ?? "-" }}</h1>
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-sm-12">

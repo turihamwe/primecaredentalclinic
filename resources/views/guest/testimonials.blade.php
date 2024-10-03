@@ -7,7 +7,7 @@
 <section class="our-team">
 	<div class="container">
 		<div class="inner-title row">
-			<h2>{{ $title }}</h2>
+			<h2>{{ $title ?? "-" }}</h2>
 			<p>Take a look at our work before and after.</p>
 		</div>
 		<div class="row team-row">

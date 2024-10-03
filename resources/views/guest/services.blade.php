@@ -5,7 +5,7 @@
 <section class="key-features kf-2">
 	<div class="container">
 		<div class="inner-title">
-			<h2>{{ $title }}</h2>
+			<h2>{{ $title ?? "-" }}</h2>
 			<p>Take a look at our services</p>
 		</div>
 		<div class="row">

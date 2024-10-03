@@ -283,6 +283,11 @@
 					<img src="{{ asset('images/insurance/allianz.jpg') }}" alt="Allianz partners {{ config('app.name') }}">
 				</div>
 			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/prudential.jpg') }}" alt="Prudential {{ config('app.name') }}">
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

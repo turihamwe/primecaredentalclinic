@@ -12,7 +12,7 @@
 
 		<div class="row">
 			<div style="padding:20px" class="col-sm-6">
-				<h2 style="font-size:18px">{{ $title }}</h2>
+				<h2 style="font-size:18px">{{ $title ?? "-" }}</h2>
 				<p>Make your appointment online using our email <span class="text-info">{{ env('EMAIL_APP') }}</span> or the convenient form below.</p><br>
 				<form action="{{ route('appointment') }}" method="POST">
 					@csrf

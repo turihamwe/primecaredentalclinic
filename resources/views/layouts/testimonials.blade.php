@@ -101,7 +101,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="btn-ro text-center">
+		<div class="btn-ro text-center"><br><br>
+            <p><video width="720" height="auto" controls>
+                <source src="images/video.mp4" type="video/mp4">
+                <source src="images/video.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video></p><br><br>
 			<button class="btn btn-success"><a href="{{ route('testimonials') }}" class="text-white">Read more</a></button>
 		</div>
 	</div>

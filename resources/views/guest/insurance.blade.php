@@ -6,7 +6,7 @@
 <div class="about-us">
 	<div class="container">
 		<div class="inner-title">
-			<h1 class="text-center">{{ $title }}</h1>
+			<h1 class="text-center">{{ $title ?? "-" }}</h1>
 			{{-- <p>Take a look at some of our key features</p> --}}
 		</div>
 	</div>
@@ -49,14 +49,14 @@
 							</div>
 						</div>
 					</div>
-					{{-- <div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6">
 						<div class="single-usr">
 							<img src="{{ asset('images/insurance/prudential.jpg') }}" alt="Prudential insurance {{ config('app.name') }}">
 							<div class="det-o">
 								<h4>Prudential</h4>
 							</div>
 						</div>
-					</div> --}}
+					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="single-usr">
 							<img src="{{ asset('images/insurance/msh.jpg') }}" alt="MSH international {{ config('app.name') }}">

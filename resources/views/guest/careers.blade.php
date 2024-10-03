@@ -8,7 +8,7 @@
 		@include('layouts.messages')
 
 		<div class="inner-title">
-			<h1 class="text-center">{{ $title }}</h1>
+			<h1 class="text-center">{{ $title ?? "-" }}</h1>
 			{{-- <p>Take a look at some of our key features</p> --}}
 		</div>
 	</div>

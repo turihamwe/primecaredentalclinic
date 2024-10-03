@@ -9,7 +9,7 @@
 
 		<div class="row">
 			<div style="padding:20px" class="col-sm-6">
-				<h2 style="font-size:18px">{{ $title }}</h2>
+				<h2 style="font-size:18px">{{ $title ?? "-" }}</h2>
 				<form action="{{ route('contact') }}" method="POST">
 					@csrf
 
