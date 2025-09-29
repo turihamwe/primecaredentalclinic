@@ -16,6 +16,7 @@ class HomeController extends Controller
 {
     private $info_email = "info@primecaredentalclinics.com";
     private $appointments_email = "appointments@primecaredentalclinics.com";
+    private $referrals_email = "appointments@primecaredentalclinics.com";
 
     /**
      * Show the home page.
@@ -546,6 +547,85 @@ class HomeController extends Controller
         }else{
             // logToDB("create_contact_error", "Contact #{$contact->code} unsuccessful.", NULL, NULL, $username, "user", 1);
             return back()->with("error", "Contact unsuccessful.");
+        }
+
+    }
+
+    public function refer()
+    {
+        $data = [
+            'title' => 'Refer a Patient',
+        ];
+        return view('guest.refer', $data);
+    }
+
+    public function refer_post(Request $request)
+    {
+        //1. Validate request.
+        $request->validate([
+            'service' => 'required|string|max:255',
+            'provider_details' => 'required|string|max:255',
+            'reason' => 'required|string',
+            'patient_name' => 'required|string|max:255',
+            'patient_gender' => 'required|string|max:255',
+            'dob' => 'required|string|max:255',
+            'parent' => 'required|string|max:255',
+            'address' => 'required|string|max:255',
+            'records' => 'nullable',
+            'date' => 'required|string|max:255',
+            'time' => 'required|string|max:255',
+            'insurance' => 'required|string|max:255',
+            'provider' => 'required|string|max:255',
+            'doctor_name' => 'required|string|max:255',
+            'doctor_phone' => 'required|string|max:255',
+            'doctor_email' => 'required|string|max:255',
+        ]);
+
+        //2. Capture inputs.
+        $service = $request->input('service');
+        $provider_details = $request->input('provider_details');
+        $reason = $request->input('reason');
+        $patient_name = $request->input('patient_name');
+        $patient_gender = $request->input('patient_gender');
+        $dob = $request->input('dob');
+        $parent = $request->input('parent');
+        $address = $request->input('address');
+        $records = $request->input('records');
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $insurance = $request->input('insurance');
+        $provider = $request->input('provider');
+        $doctor_name = $request->input('doctor_name');
+        $doctor_phone = $request->input('doctor_phone');
+        $doctor_email = $request->input('doctor_email');
+
+        $message = "Service: " . $service . "\n"
+         . "Provider details: " . $provider_details . "\n"
+         . "Reason: " . $reason . "\n"
+         . "Patient name: " . $patient_name . "\n"
+         . "Date of birth: " . $dob . "\n"
+         . "Parent: " . $parent . "\n"
+         . "Address: " . $address . "\n"
+         . "Medical records: " . $records . "\n"
+         . "Preferred date: " . $date . "\n"
+         . "Preferred time: " . $time . "\n"
+         . "Insurance: " . $insurance . "\n"
+         . "Provider: " . $provider . "\n"
+         . "Doctor name: " . $doctor_name . "\n"
+         . "Doctor phone: " . $doctor_phone . "\n"
+         . "Doctor email: " . $doctor_email . "\n";
+        $headers = "From: " . $doctor_email;
+
+        //Send email.
+        $result = mail($this->referrals_email, "New patient referral: ", $message, $headers);
+
+        //7. Validate result.
+        if($result){
+            // logToDB("create_referral_success", "Referral #{$contact->code} successful.", NULL, NULL, $username, "user", 1);
+            return back()->with("success", "Referral submitted successfully.");
+        }else{
+            // logToDB("create_referral_error", "Referral #{$contact->code} unsuccessful.", NULL, NULL, $username, "user", 1);
+            return back()->with("error", "Referral unsuccessful.");
         }
 
     }

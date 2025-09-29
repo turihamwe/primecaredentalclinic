@@ -72,6 +72,8 @@ Route::namespace('App\Http\Controllers\Guest')->group(function (){
     Route::post('careers-submit', 'HomeController@careers_post')->name('careers-submit');
     Route::get('contact', 'HomeController@contact')->name('contact');
     Route::post('contact', 'HomeController@contact_post')->name('contact');
+    Route::get('refer-a-patient', 'HomeController@refer')->name('refer-a-patient');
+    Route::post('refer-a-patient', 'HomeController@refer_post')->name('refer-a-patient');
 });
 /*end Guest pages*/
 

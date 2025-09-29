@@ -104,7 +104,8 @@
 					{{-- <li><a href="{{ route('partnerships') }}" class="btn btn-sm btn-success">Partnerships</a></li> --}}
 					<li title="Appointment"><a href="{{ route('appointment') }}" class="btn btn-sm btn-warning">Book an appointment</a></li>
 					{{-- <li><a href="{{ route('team') }}" class="btn btn-sm btn-success">Our team</a></li> --}}
-					<li><a href="{{ route('tutorials') }}" class="btn btn-sm btn-success">Tutorials</a></li>
+					<li><a href="{{ route('refer-a-patient') }}" class="btn btn-sm btn-warning">Refer a patient</a></li>
+					{{-- <li><a href="{{ route('tutorials') }}" class="btn btn-sm btn-success">Tutorials</a></li> --}}
 					{{-- <li title="Technology"><a href="{{ route('technology') }}" class="btn btn-sm btn-success">Technology</a></li> --}}
 					{{-- <li title="Insurance"><a href="{{ route('insurance') }}" class="btn btn-sm btn-success">Insurance</a></li> --}}
 					{{-- <li title="Careers"><a href="{{ route('careers') }}" class="btn btn-sm btn-success">Careers</a></li> --}}

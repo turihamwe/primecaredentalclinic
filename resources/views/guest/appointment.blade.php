@@ -12,7 +12,7 @@
 
 		<div class="row">
 			<div style="padding:20px" class="col-sm-6">
-				<h2 style="font-size:18px">{{ $title ?? "-" }}</h2>
+				<h2 style="font-size:18px">{{ $title ?? "-" }} <small><a href="{{ route('refer-a-patient') }}" class="text-info">Refer a patient</a></small></h2>
 				<p>Make your appointment online using our email <span class="text-info">{{ env('EMAIL_APP') }}</span> or the convenient form below.</p><br>
 				<form action="{{ route('appointment') }}" method="POST">
 					@csrf
@@ -78,8 +78,8 @@
 				</div>
 				<div style="margin:50px" class="serv">
 					<h2 style="margin-top:10px;">Payment methods</h2>
-					<p>MTN Mobile money: <b>{{ env('PHONE_1') }}</b></p>
-					<p>Airtel money: <b>{{ env('PHONE_3') }}</b></p>
+					<p>MTN Mobile money: <b>0772639412</b></p>
+					<p>Airtel money: <b>0704605561</b></p>
 					<p>Equity till number: <b>{{ env('PAY_EQUITY') }}</b></p>
 				</div>
 			</div>

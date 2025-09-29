@@ -113,6 +113,22 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/partners/jms2.png') }}" alt="GA insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>Joint Medical Store</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-usr">
+							<img src="{{ asset('images/insurance/icea.jpg') }}" alt="ICEA insurance {{ config('app.name') }}">
+							<div class="det-o">
+								<h4>ICEA Lion insurance</h4>
+							</div>
+						</div>
+					</div>
 					{{-- <div class="col-md-3 col-sm-6">
 						<div class="single-usr">
 							<img src="{{ asset('images/insurance/uap.jpg') }}" alt="UAP insurance {{ config('app.name') }}">

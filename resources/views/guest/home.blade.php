@@ -19,7 +19,10 @@
 					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">Welcome to Primecare dental clinic for Cosmetic and Implant Dentistry, where we create memorable smiles that will last a lifetime. Our team has worked alongside thousands of patients to create for them a lasting perfect smile. Located at {{ env('ADDRESS_1') }}, our clinic provides an elegant and calming atmosphere to make our clients feel welcomed and cared for. Navigate our website to see how we have helped our clients achieve the look they desire!</p>
 					{{-- <p class=" bounceInLeft">Welcome to Primecare Dental Clinic in Kololo, Kampala! We are delighted to have you and are committed to providing you with the highest level of dental care. Our team of experienced dentists and friendly staff are here to ensure that your visit is comfortable, stress-free and effective.</p> --}}
 					<div class="row vbh">
-						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
+						<div class="bounceInUp">
+                            <a href="{{ route('appointment') }}" class="btn btn-info text-white">Make an Appointment</a>
+                            <a href="{{ route('refer-a-patient') }}" class="btn btn-danger text-white pull-right">Refer a patient</a>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -29,7 +32,10 @@
 					<h5 class=" bounceInDown text-white">Latest technology</h5>
 					<p class=" bounceInLeft" style="background: #4b454bc7; font-weight:300;">At Primecare Dental Clinic, we understand that every patient is unique, and we take the time to listen to your concerns and provide personalized care tailored to your needs. We offer a wide range of dental services, from routine cleanings and fillings to advanced treatments such as dental implants and orthodontics.</p>
 					<div class="row vbh">
-						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
+						<div class="bounceInUp">
+                            <a href="{{ route('appointment') }}" class="btn btn-info text-white">Make an Appointment</a>
+                            <a href="{{ route('refer-a-patient') }}" class="btn btn-danger text-white pull-right">Refer a patient</a>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -39,7 +45,10 @@
 					<h5 class=" bounceInDown">Family dental services</h5>
 					<p class=" bounceInLeft" style="background: #4b454b6e; font-weight:300;">We use the latest technology and techniques to provide you with the most effective and efficient care possible. Our goal is to help you achieve optimal oral health and a beautiful, confident smile that you can be proud of.</p>
 					<div class="row vbh">
-						<div class="btn btn-info bounceInUp"><a href="{{ route('appointment') }}" class=" text-white">Make an Appointment</a></div>
+						<div class="bounceInUp">
+                            <a href="{{ route('appointment') }}" class="btn btn-info text-white">Make an Appointment</a>
+                            <a href="{{ route('refer-a-patient') }}" class="btn btn-danger text-white pull-right">Refer a patient</a>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -180,6 +189,11 @@
 					</div>
 				</div><br>
 				<p>Regular dental talks/outreaches can be arranged at your premises.</p>
+                <br><br><br>
+                <div class="bounceInUp text-center">
+                    <a href="{{ route('appointment') }}" class="btn btn-info text-white">Make an Appointment</a>
+                    <a href="{{ route('refer-a-patient') }}" class="btn btn-danger text-white pull-right">Refer a patient</a>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -288,7 +302,23 @@
 					<img src="{{ asset('images/insurance/prudential.jpg') }}" alt="Prudential {{ config('app.name') }}">
 				</div>
 			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/partners/jms2.png') }}" alt="Joint Medical Store {{ config('app.name') }}">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="single-key">
+					<img src="{{ asset('images/insurance/icea.jpg') }}" alt="Joint Medical Store {{ config('app.name') }}">
+				</div>
+			</div>
 		</div>
+
+        <br><br><br>
+        <div class="bounceInUp text-center">
+            <a href="{{ route('appointment') }}" class="btn btn-info text-white">Make an Appointment</a>
+            <a href="{{ route('refer-a-patient') }}" class="btn btn-danger text-white pull-right">Refer a patient</a>
+        </div>
 	</div>
 </section>
 <div class="top-msg">
@@ -379,6 +409,7 @@
 				<h3>or make an appointment</h3>
 				<div class="btn-ro">
 					<button class="btn btn-warning bg-warning"><a href="{{ route('appointment') }}" class="text-white">Book an appointment</a></button>
+                    <button class="btn btn-info bg-info"><a href="{{ route('refer-a-patient') }}" class="text-white">Refer a patient</a></button>
 				</div>
 			</div>
 		</div>
